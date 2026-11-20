@@ -83,3 +83,11 @@ O GitHub Pages está configurado pelo proprietário do repositório. URL informa
 ### Situação da release
 
 Código implementado e versionado; verificação manual no site publicado e testes em dispositivos ainda pendentes.
+
+## Painel 2027.1 - Catálogo previsto
+
+O arquivo `data/portal.json` contém **7 alocações previstas** distribuídas em **4 cursos**, totalizando **462 horas** (66 h cada), transcritas da declaração de disciplinas de 20/11/2026. Os registros são planejamento e estão sujeitos a alterações institucionais.
+
+O dashboard apresenta indicadores automáticos, barras de distribuição por curso e filtros. Cada turma tem página própria; conteúdos, planos, bibliografias, cronogramas e vínculos de Classroom são publicados somente quando confirmados.
+
+Para atualizar uma turma, edite o item de mesmo `id` em `data/portal.json`. Não hospede materiais restritos ou dados pessoais nesse JSON público.
