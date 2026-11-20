@@ -37,11 +37,224 @@
       "status": "prevista",
       "classroomUrl": null,
       "planoUrl": null,
-      "unidades": [],
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Introdução aos sistemas operacionais e conceitos de hardware",
+          "objetos": [
+            {
+              "codigo": 341,
+              "tema": "Conceitos iniciais, história e função dos sistemas operacionais"
+            },
+            {
+              "codigo": 342,
+              "tema": "Tipos de SO: monoprogramáveis, multiprogramáveis e múltiplos processadores"
+            },
+            {
+              "codigo": 343,
+              "tema": "Hardware, software, memórias principal, secundária e cache"
+            },
+            {
+              "codigo": 344,
+              "tema": "Dispositivos de E/S, barramento e pipelining"
+            },
+            {
+              "codigo": 345,
+              "tema": "Tradutor, interpretador, linker, loader e depurador"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Concorrência e estrutura dos sistemas operacionais",
+          "objetos": [
+            {
+              "codigo": 346,
+              "tema": "Concorrência em sistemas mono e multiprogramáveis"
+            },
+            {
+              "codigo": 347,
+              "tema": "Interrupções, exceções, E/S, buffering, spooling e reentrância"
+            },
+            {
+              "codigo": 348,
+              "tema": "Núcleo, modos de acesso, rotinas e system calls"
+            },
+            {
+              "codigo": 349,
+              "tema": "Chamada a rotinas, linguagem de comandos e ativação/desativação"
+            },
+            {
+              "codigo": 350,
+              "tema": "Núcleo monolítico, camadas, máquina virtual e microkernel"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Processos e threads",
+          "objetos": [
+            {
+              "codigo": 351,
+              "tema": "Estrutura do processo, endereçamento e bloco de controle"
+            },
+            {
+              "codigo": 352,
+              "tema": "Estados, mudanças, criação, eliminação, CPU-bound e I/O-bound"
+            },
+            {
+              "codigo": 353,
+              "tema": "Foreground, background e formas de criação"
+            },
+            {
+              "codigo": 354,
+              "tema": "Processos independentes, subprocessos e sinais"
+            },
+            {
+              "codigo": 355,
+              "tema": "Threads mono e multi, programação multithread, usuário, kernel, híbrido e scheduler activations"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Sincronização, comunicação entre processos e gerência do processador",
+          "objetos": [
+            {
+              "codigo": 356,
+              "tema": "Aplicações concorrentes e especificação da concorrência"
+            },
+            {
+              "codigo": 357,
+              "tema": "Exclusão mútua por hardware/software e sincronização condicional"
+            },
+            {
+              "codigo": 358,
+              "tema": "Semáforos, monitores, mensagens e deadlock"
+            },
+            {
+              "codigo": 359,
+              "tema": "Critérios de escalonamento, preemptivo/não preemptivo, FIFO e SJF"
+            },
+            {
+              "codigo": 360,
+              "tema": "Escalonamento cooperativo, circular, prioridades, múltiplas filas e tempo real"
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Gerência de memória e memória virtual",
+          "objetos": [
+            {
+              "codigo": 361,
+              "tema": "Gerência, alocação contígua simples e overlay"
+            },
+            {
+              "codigo": 362,
+              "tema": "Particionamento estático/dinâmico, estratégias de alocação e swapping"
+            },
+            {
+              "codigo": 363,
+              "tema": "Endereçamento virtual e mapeamento"
+            },
+            {
+              "codigo": 364,
+              "tema": "Paginação: busca, alocação e substituição de páginas"
+            },
+            {
+              "codigo": 365,
+              "tema": "Segmentação, paginação com segmentação e swapping virtual"
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Sistema de arquivos e gerência de dispositivos",
+          "objetos": [
+            {
+              "codigo": 366,
+              "tema": "Organização de arquivos, acesso, E/S e atributos"
+            },
+            {
+              "codigo": 367,
+              "tema": "Diretórios e gerência de espaço livre"
+            },
+            {
+              "codigo": 368,
+              "tema": "Alocação de disco contígua, encadeada e indexada"
+            },
+            {
+              "codigo": 369,
+              "tema": "Senhas, grupos de usuários e ACL"
+            },
+            {
+              "codigo": 370,
+              "tema": "Subsistemas, controladores e drivers de E/S"
+            },
+            {
+              "codigo": 371,
+              "tema": "Discos magnéticos, desempenho, redundância e proteção de dados"
+            }
+          ]
+        }
+      ],
       "aulas": [],
       "atividades": [],
       "cronograma": [],
-      "referencias": []
+      "referencias": [
+        {
+          "titulo": "Silberschatz - Fundamentos de sistemas operacionais, 8ª ed. (2014)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/reader/books/978-85-216-3001-2"
+        },
+        {
+          "titulo": "Oliveira - Sistemas operacionais, 4ª ed. (2010)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": null
+        },
+        {
+          "titulo": "Machado - Arquitetura de sistemas operacionais, 4ª ed. (2000)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/reader/books/978-85-216-2288-8"
+        },
+        {
+          "titulo": "Córdova Jr., Ledur e Morais - Sistemas operacionais (2018)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/#/books/9788595027336"
+        },
+        {
+          "titulo": "Faria - Bacula: community e enterprise (2020)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Loader/182379/epub"
+        },
+        {
+          "titulo": "Stallings - Arquitetura e organização de computadores, 10ª ed. (2017)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Loader/151479/pdf"
+        },
+        {
+          "titulo": "Tanenbaum - Sistemas operacionais: projeto e implementação, 3ª ed. (2008)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/#/books/9788577802852"
+        },
+        {
+          "titulo": "Tanenbaum e Austin - Organização estruturada de computadores (2013)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Publicacao/3825"
+        }
+      ],
+      "planejamento": {
+        "status": "Proposta didática 2027.1 - pendente de validação",
+        "planoReferencia": "Sistemas Operacionais - Plano de Aprendizagem PPC 2026, versão corrigida, 66 h, identificado para ADS",
+        "aplicacao": "Conteúdo de referência ADS, pendente de aprovação para 2027.1",
+        "metodologias": [
+          "Aulas expositivas dialogadas",
+          "Aprendizagem baseada em times (TBL)"
+        ],
+        "avaliacao": "Avaliações e pesos do plano 2026.2 devem ser confirmados para 2027.1",
+        "materiais": "Nenhum arquivo autoral nem atividade foi publicado."
+      }
     },
     {
       "id": "engco232n01-sed",
@@ -91,11 +304,224 @@
       "status": "prevista",
       "classroomUrl": null,
       "planoUrl": null,
-      "unidades": [],
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Introdução aos sistemas operacionais e conceitos de hardware",
+          "objetos": [
+            {
+              "codigo": 341,
+              "tema": "Conceitos iniciais, história e função dos sistemas operacionais"
+            },
+            {
+              "codigo": 342,
+              "tema": "Tipos de SO: monoprogramáveis, multiprogramáveis e múltiplos processadores"
+            },
+            {
+              "codigo": 343,
+              "tema": "Hardware, software, memórias principal, secundária e cache"
+            },
+            {
+              "codigo": 344,
+              "tema": "Dispositivos de E/S, barramento e pipelining"
+            },
+            {
+              "codigo": 345,
+              "tema": "Tradutor, interpretador, linker, loader e depurador"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Concorrência e estrutura dos sistemas operacionais",
+          "objetos": [
+            {
+              "codigo": 346,
+              "tema": "Concorrência em sistemas mono e multiprogramáveis"
+            },
+            {
+              "codigo": 347,
+              "tema": "Interrupções, exceções, E/S, buffering, spooling e reentrância"
+            },
+            {
+              "codigo": 348,
+              "tema": "Núcleo, modos de acesso, rotinas e system calls"
+            },
+            {
+              "codigo": 349,
+              "tema": "Chamada a rotinas, linguagem de comandos e ativação/desativação"
+            },
+            {
+              "codigo": 350,
+              "tema": "Núcleo monolítico, camadas, máquina virtual e microkernel"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Processos e threads",
+          "objetos": [
+            {
+              "codigo": 351,
+              "tema": "Estrutura do processo, endereçamento e bloco de controle"
+            },
+            {
+              "codigo": 352,
+              "tema": "Estados, mudanças, criação, eliminação, CPU-bound e I/O-bound"
+            },
+            {
+              "codigo": 353,
+              "tema": "Foreground, background e formas de criação"
+            },
+            {
+              "codigo": 354,
+              "tema": "Processos independentes, subprocessos e sinais"
+            },
+            {
+              "codigo": 355,
+              "tema": "Threads mono e multi, programação multithread, usuário, kernel, híbrido e scheduler activations"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Sincronização, comunicação entre processos e gerência do processador",
+          "objetos": [
+            {
+              "codigo": 356,
+              "tema": "Aplicações concorrentes e especificação da concorrência"
+            },
+            {
+              "codigo": 357,
+              "tema": "Exclusão mútua por hardware/software e sincronização condicional"
+            },
+            {
+              "codigo": 358,
+              "tema": "Semáforos, monitores, mensagens e deadlock"
+            },
+            {
+              "codigo": 359,
+              "tema": "Critérios de escalonamento, preemptivo/não preemptivo, FIFO e SJF"
+            },
+            {
+              "codigo": 360,
+              "tema": "Escalonamento cooperativo, circular, prioridades, múltiplas filas e tempo real"
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Gerência de memória e memória virtual",
+          "objetos": [
+            {
+              "codigo": 361,
+              "tema": "Gerência, alocação contígua simples e overlay"
+            },
+            {
+              "codigo": 362,
+              "tema": "Particionamento estático/dinâmico, estratégias de alocação e swapping"
+            },
+            {
+              "codigo": 363,
+              "tema": "Endereçamento virtual e mapeamento"
+            },
+            {
+              "codigo": 364,
+              "tema": "Paginação: busca, alocação e substituição de páginas"
+            },
+            {
+              "codigo": 365,
+              "tema": "Segmentação, paginação com segmentação e swapping virtual"
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Sistema de arquivos e gerência de dispositivos",
+          "objetos": [
+            {
+              "codigo": 366,
+              "tema": "Organização de arquivos, acesso, E/S e atributos"
+            },
+            {
+              "codigo": 367,
+              "tema": "Diretórios e gerência de espaço livre"
+            },
+            {
+              "codigo": 368,
+              "tema": "Alocação de disco contígua, encadeada e indexada"
+            },
+            {
+              "codigo": 369,
+              "tema": "Senhas, grupos de usuários e ACL"
+            },
+            {
+              "codigo": 370,
+              "tema": "Subsistemas, controladores e drivers de E/S"
+            },
+            {
+              "codigo": 371,
+              "tema": "Discos magnéticos, desempenho, redundância e proteção de dados"
+            }
+          ]
+        }
+      ],
       "aulas": [],
       "atividades": [],
       "cronograma": [],
-      "referencias": []
+      "referencias": [
+        {
+          "titulo": "Silberschatz - Fundamentos de sistemas operacionais, 8ª ed. (2014)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/reader/books/978-85-216-3001-2"
+        },
+        {
+          "titulo": "Oliveira - Sistemas operacionais, 4ª ed. (2010)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": null
+        },
+        {
+          "titulo": "Machado - Arquitetura de sistemas operacionais, 4ª ed. (2000)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/reader/books/978-85-216-2288-8"
+        },
+        {
+          "titulo": "Córdova Jr., Ledur e Morais - Sistemas operacionais (2018)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/#/books/9788595027336"
+        },
+        {
+          "titulo": "Faria - Bacula: community e enterprise (2020)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Loader/182379/epub"
+        },
+        {
+          "titulo": "Stallings - Arquitetura e organização de computadores, 10ª ed. (2017)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Loader/151479/pdf"
+        },
+        {
+          "titulo": "Tanenbaum - Sistemas operacionais: projeto e implementação, 3ª ed. (2008)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/#/books/9788577802852"
+        },
+        {
+          "titulo": "Tanenbaum e Austin - Organização estruturada de computadores (2013)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Publicacao/3825"
+        }
+      ],
+      "planejamento": {
+        "status": "Proposta didática 2027.1 - pendente de validação",
+        "planoReferencia": "Sistemas Operacionais - Plano de Aprendizagem PPC 2026, versão corrigida, 66 h, identificado para ADS",
+        "aplicacao": "Adaptação de referência ADS, sujeita à validação de plano específico deste curso",
+        "metodologias": [
+          "Aulas expositivas dialogadas",
+          "Aprendizagem baseada em times (TBL)"
+        ],
+        "avaliacao": "Avaliações e pesos do plano 2026.2 devem ser confirmados para 2027.1",
+        "materiais": "Nenhum arquivo autoral nem atividade foi publicado."
+      }
     },
     {
       "id": "sis241n01-zsu",
@@ -127,11 +553,224 @@
       "status": "prevista",
       "classroomUrl": null,
       "planoUrl": null,
-      "unidades": [],
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Introdução aos sistemas operacionais e conceitos de hardware",
+          "objetos": [
+            {
+              "codigo": 341,
+              "tema": "Conceitos iniciais, história e função dos sistemas operacionais"
+            },
+            {
+              "codigo": 342,
+              "tema": "Tipos de SO: monoprogramáveis, multiprogramáveis e múltiplos processadores"
+            },
+            {
+              "codigo": 343,
+              "tema": "Hardware, software, memórias principal, secundária e cache"
+            },
+            {
+              "codigo": 344,
+              "tema": "Dispositivos de E/S, barramento e pipelining"
+            },
+            {
+              "codigo": 345,
+              "tema": "Tradutor, interpretador, linker, loader e depurador"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Concorrência e estrutura dos sistemas operacionais",
+          "objetos": [
+            {
+              "codigo": 346,
+              "tema": "Concorrência em sistemas mono e multiprogramáveis"
+            },
+            {
+              "codigo": 347,
+              "tema": "Interrupções, exceções, E/S, buffering, spooling e reentrância"
+            },
+            {
+              "codigo": 348,
+              "tema": "Núcleo, modos de acesso, rotinas e system calls"
+            },
+            {
+              "codigo": 349,
+              "tema": "Chamada a rotinas, linguagem de comandos e ativação/desativação"
+            },
+            {
+              "codigo": 350,
+              "tema": "Núcleo monolítico, camadas, máquina virtual e microkernel"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Processos e threads",
+          "objetos": [
+            {
+              "codigo": 351,
+              "tema": "Estrutura do processo, endereçamento e bloco de controle"
+            },
+            {
+              "codigo": 352,
+              "tema": "Estados, mudanças, criação, eliminação, CPU-bound e I/O-bound"
+            },
+            {
+              "codigo": 353,
+              "tema": "Foreground, background e formas de criação"
+            },
+            {
+              "codigo": 354,
+              "tema": "Processos independentes, subprocessos e sinais"
+            },
+            {
+              "codigo": 355,
+              "tema": "Threads mono e multi, programação multithread, usuário, kernel, híbrido e scheduler activations"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Sincronização, comunicação entre processos e gerência do processador",
+          "objetos": [
+            {
+              "codigo": 356,
+              "tema": "Aplicações concorrentes e especificação da concorrência"
+            },
+            {
+              "codigo": 357,
+              "tema": "Exclusão mútua por hardware/software e sincronização condicional"
+            },
+            {
+              "codigo": 358,
+              "tema": "Semáforos, monitores, mensagens e deadlock"
+            },
+            {
+              "codigo": 359,
+              "tema": "Critérios de escalonamento, preemptivo/não preemptivo, FIFO e SJF"
+            },
+            {
+              "codigo": 360,
+              "tema": "Escalonamento cooperativo, circular, prioridades, múltiplas filas e tempo real"
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Gerência de memória e memória virtual",
+          "objetos": [
+            {
+              "codigo": 361,
+              "tema": "Gerência, alocação contígua simples e overlay"
+            },
+            {
+              "codigo": 362,
+              "tema": "Particionamento estático/dinâmico, estratégias de alocação e swapping"
+            },
+            {
+              "codigo": 363,
+              "tema": "Endereçamento virtual e mapeamento"
+            },
+            {
+              "codigo": 364,
+              "tema": "Paginação: busca, alocação e substituição de páginas"
+            },
+            {
+              "codigo": 365,
+              "tema": "Segmentação, paginação com segmentação e swapping virtual"
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Sistema de arquivos e gerência de dispositivos",
+          "objetos": [
+            {
+              "codigo": 366,
+              "tema": "Organização de arquivos, acesso, E/S e atributos"
+            },
+            {
+              "codigo": 367,
+              "tema": "Diretórios e gerência de espaço livre"
+            },
+            {
+              "codigo": 368,
+              "tema": "Alocação de disco contígua, encadeada e indexada"
+            },
+            {
+              "codigo": 369,
+              "tema": "Senhas, grupos de usuários e ACL"
+            },
+            {
+              "codigo": 370,
+              "tema": "Subsistemas, controladores e drivers de E/S"
+            },
+            {
+              "codigo": 371,
+              "tema": "Discos magnéticos, desempenho, redundância e proteção de dados"
+            }
+          ]
+        }
+      ],
       "aulas": [],
       "atividades": [],
       "cronograma": [],
-      "referencias": []
+      "referencias": [
+        {
+          "titulo": "Silberschatz - Fundamentos de sistemas operacionais, 8ª ed. (2014)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/reader/books/978-85-216-3001-2"
+        },
+        {
+          "titulo": "Oliveira - Sistemas operacionais, 4ª ed. (2010)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": null
+        },
+        {
+          "titulo": "Machado - Arquitetura de sistemas operacionais, 4ª ed. (2000)",
+          "descricao": "Bibliografia básica do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/reader/books/978-85-216-2288-8"
+        },
+        {
+          "titulo": "Córdova Jr., Ledur e Morais - Sistemas operacionais (2018)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/#/books/9788595027336"
+        },
+        {
+          "titulo": "Faria - Bacula: community e enterprise (2020)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Loader/182379/epub"
+        },
+        {
+          "titulo": "Stallings - Arquitetura e organização de computadores, 10ª ed. (2017)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Loader/151479/pdf"
+        },
+        {
+          "titulo": "Tanenbaum - Sistemas operacionais: projeto e implementação, 3ª ed. (2008)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://integrada.minhabiblioteca.com.br/#/books/9788577802852"
+        },
+        {
+          "titulo": "Tanenbaum e Austin - Organização estruturada de computadores (2013)",
+          "descricao": "Bibliografia complementar do plano de referência",
+          "url": "https://plataforma.bvirtual.com.br/Leitor/Publicacao/3825"
+        }
+      ],
+      "planejamento": {
+        "status": "Proposta didática 2027.1 - pendente de validação",
+        "planoReferencia": "Sistemas Operacionais - Plano de Aprendizagem PPC 2026, versão corrigida, 66 h, identificado para ADS",
+        "aplicacao": "Adaptação de referência ADS, sujeita à validação de plano específico deste curso",
+        "metodologias": [
+          "Aulas expositivas dialogadas",
+          "Aprendizagem baseada em times (TBL)"
+        ],
+        "avaliacao": "Avaliações e pesos do plano 2026.2 devem ser confirmados para 2027.1",
+        "materiais": "Nenhum arquivo autoral nem atividade foi publicado."
+      }
     }
   ],
   "avisos": [
@@ -148,5 +787,16 @@
     "tipo": "Declaração de disciplinas - RH Portal",
     "emissao": "2026-11-20",
     "nota": "Relação prevista, não horário final."
+  },
+  "organizacaoSO": {
+    "turmas": [
+      "ads262m01-sed",
+      "engs262m01-sed",
+      "sis262n01-sed"
+    ],
+    "unidades": 6,
+    "objetos": 31,
+    "fonte": "Plano de Ensino Aprendizagem Sistemas Operacionais PPC 2026, versão corrigida para ADS",
+    "observacao": "Estrutura de referência, ainda não é plano oficial confirmado para as três turmas de 2027.1"
   }
 }
