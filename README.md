@@ -2,7 +2,7 @@
 
 **Seu espaço de aprendizagem.**
 
-Portal acadêmico do **Prof. Alexsander Farias** para organizar disciplinas, aulas, cronogramas, planos de ensino, materiais didáticos e atividades, com integração ao Google Classroom.
+Portal acadêmico do **Prof. Alexsand Farias** para organizar disciplinas, aulas, cronogramas, planos de ensino, materiais didáticos e atividades, com integração ao Google Classroom.
 
 > **Status:** desenvolvimento inicial. As disciplinas e os cronogramas de 2027.1 serão cadastrados após confirmação institucional.
 
