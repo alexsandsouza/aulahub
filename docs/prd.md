@@ -29,3 +29,24 @@
 
 ## Rastreabilidade
 Cada funcionalidade nova deve fazer referência ao ID de requisito correspondente em alterações, revisões e testes.
+
+
+## Incremento implementado - Dashboard Acadêmico 0.2 (2026-11-20)
+
+| ID | Requisito | Situação | Critério de verificação |
+| --- | --- | --- | --- |
+| RF-010 | Exibir dashboard inicial | Implementado | Quatro indicadores visíveis, com números claramente rotulados e sem alegar dados oficiais. |
+| RF-011 | Pesquisar disciplinas sem diferenciar acentos | Implementado | Filtro por texto encontra resultados com e sem acentuação. |
+| RF-012 | Filtrar disciplinas por área | Implementado | Seleção de área modifica a lista, inclusive combinada com a busca. |
+| RF-013 | Exibir estado vazio para filtro sem correspondência | Implementado | Mensagem informativa é exibida. |
+| RF-014 | Reservar seções de agenda e avisos | Implementado | Não apresenta datas ou atividades não confirmadas. |
+| RF-015 | Dashboard por semestre, curso e turma reais | Pendente | Depende de distribuição acadêmica oficial. |
+
+### Verificação para a release 0.2
+- Conferir responsividade em celular, tablet e desktop.
+- Testar pesquisa, filtros e mensagem de ausência de resultados.
+- Validar links e navegação por teclado.
+- Revisar semântica e contraste.
+- Confirmar implantação no GitHub Pages após a atualização da branch main.
+
+**Observação:** as três disciplinas são exemplos; o número exibido no indicador se refere a cards demonstrativos, não a ofertas confirmadas. Os indicadores de atividades, turmas e eventos oficiais permanecem em zero até sua publicação.
