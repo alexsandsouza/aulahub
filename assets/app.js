@@ -81,7 +81,7 @@ const d=(portal.disciplinas||[]).find(x=>x.id===id);
 if(!d){app.innerHTML='<section><h1>Disciplina não encontrada</h1><p class="muted">Confira o endereço ou retorne ao catálogo.</p><a class="btn" href="#disciplinas">Voltar para disciplinas</a></section>';return}
 const active=sections.some(s=>s[0]===tab)?tab:"visao";
 app.innerHTML='<div class="detail-header"><div class="breadcrumb"><a href="#disciplinas">← Todas as disciplinas</a> / '+safe(d.periodo)+'</div><div class="kicker" style="margin-top:23px">Espaço da disciplina</div><h1>'+safe(d.nome)+'</h1><p class="lead">'+safe(d.descricao)+'</p><div class="detail-meta"><span class="tag">'+safe(d.area)+'</span><span class="tag">'+safe(d.periodo)+'</span><span class="tag">'+(d.status==="confirmada"?"Turma confirmada":"Prevista · 2027.1")+'</span></div></div>'+
-+classroomOverview(d)+
+classroomOverview(d)+
 '<div class="tabs" role="tablist" aria-label="Seções da disciplina">'+sections.map(([key,title])=>'<button type="button" class="tab" role="tab" aria-selected="'+(key===active)+'" data-tab="'+key+'">'+title+'</button>').join("")+'</div>'+
 '<section id="conteudo-disciplina" role="tabpanel" aria-label="'+safe(sections.find(s=>s[0]===active)[1])+'">'+(active==="visao"?tabContent(d,active):'<div class="panel">'+tabContent(d,active)+'</div>')+'</section>';
 document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{const next=b.dataset.tab;location.hash="#/disciplina/"+encodeURIComponent(d.id)+"/"+next}));
