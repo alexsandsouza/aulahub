@@ -115,3 +115,19 @@ Não há aulas, planos, horários nem atividades fictícias publicadas. Testes d
 | RNF-UX-003 | Layout premium responsivo | Cards e hero refluem em telas menores, com hierarquia visual consistente. |
 
 O mockup é referência **estética**, não fonte de datas ou arquivos publicados. Nenhuma das atividades e PDFs demonstrativos foi cadastrada. Verificação de código-fonte executada; testes visuais em navegadores e acessibilidade assistiva continuam pendentes.
+
+
+## Incremento 0.7 - Organização da disciplina Sistemas Operacionais para 2027.1
+
+**Fonte de referência:** `1. PLANO DE ENSINO APRENDIZAGEM - 2026.2 - SISTEMAS OPERACIONAIS - CORRIGIDO(4).docx`, PPC 2026, 66 h, identificação específica de Análise e Desenvolvimento de Sistemas. Esta organização não substitui o plano aprovado para 2027.1.
+
+| ID | Requisito | Critério de aceite |
+| --- | --- | --- |
+| RF-037 | Organizar três turmas previstas de SO | IDs ADS262M01-SED, ENGS262M01-SED e SIS262N01-SED mantidos individualizados. |
+| RF-038 | Apresentar seis unidades didáticas | Exibir unidades I-VI para cada turma de SO. |
+| RF-039 | Relacionar os objetos de conhecimento | Exibir 31 OCs numerados 341 a 371, agrupados conforme o plano de referência. |
+| RF-040 | Registrar bibliografia básica e complementar | Exibir 3 referências básicas e 5 complementares; links HTTPS apenas quando constarem do plano. |
+| RF-041 | Preservar estado de materiais protegidos | Não hospedar slides, avaliações, gabaritos ou arquivos autorais no GitHub Pages. |
+| RF-042 | Comunicar status de validade | Indicar explicitamente necessidade de validar 2027.1, especialmente os cursos ENGS e SI. |
+
+**Pendências:** obter planos aprovados de 2027.1 específicos para cada curso, definir datas, preparar materiais e liberar links com acesso controlado no Drive/Classroom. Não há cronogramas, aulas ou atividades de 2027.1 confirmados neste incremento.
