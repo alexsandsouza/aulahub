@@ -254,6 +254,146 @@
         ],
         "avaliacao": "Avaliações e pesos do plano 2026.2 devem ser confirmados para 2027.1",
         "materiais": "Nenhum arquivo autoral nem atividade foi publicado."
+      },
+      "unidade1": {
+        "status": "Roteiro didático sugerido para 2027.1 - aguardando revisão docente",
+        "objetivo": "Identificar as funções e a evolução dos sistemas operacionais, comparando tipos de SO, hierarquia de memória, dispositivos, barramentos e ferramentas de tradução e execução de programas.",
+        "encontros": [
+          {
+            "numero": 1,
+            "oc": [
+              341
+            ],
+            "titulo": "História, conceitos e funções dos sistemas operacionais",
+            "objetivos": [
+              "Definir sistema operacional e identificar suas responsabilidades",
+              "Reconhecer marcos da evolução dos sistemas operacionais"
+            ],
+            "estrategia": "Aula expositiva dialogada + linha do tempo colaborativa",
+            "produto": "Quadro comparativo de três gerações de sistemas operacionais"
+          },
+          {
+            "numero": 2,
+            "oc": [
+              342
+            ],
+            "titulo": "Classificações de sistemas operacionais",
+            "objetivos": [
+              "Diferenciar sistemas monoprogramáveis, multiprogramáveis e com múltiplos processadores"
+            ],
+            "estrategia": "Estudo de caso + discussão em pequenos grupos",
+            "produto": "Tabela de cenários e justificativa do tipo de sistema adequado"
+          },
+          {
+            "numero": 3,
+            "oc": [
+              343
+            ],
+            "titulo": "Hardware, software e hierarquia de memórias",
+            "objetivos": [
+              "Distinguir hardware de software",
+              "Comparar cache, memória principal e armazenamento secundário"
+            ],
+            "estrategia": "Análise de configuração de computador + mapa mental",
+            "produto": "Diagrama da hierarquia de memória com exemplos"
+          },
+          {
+            "numero": 4,
+            "oc": [
+              344
+            ],
+            "titulo": "Entrada/saída, barramentos e pipelining",
+            "objetivos": [
+              "Classificar dispositivos de E/S",
+              "Explicar fluxo de dados e papel do barramento e do pipelining"
+            ],
+            "estrategia": "Análise de arquitetura e situação-problema",
+            "produto": "Diagrama de comunicação CPU, memória e dispositivos"
+          },
+          {
+            "numero": 5,
+            "oc": [
+              345
+            ],
+            "titulo": "Tradutor, interpretador, linker, loader e depurador",
+            "objetivos": [
+              "Explicar as etapas entre código-fonte e execução",
+              "Distinguir compilação, interpretação, vinculação, carregamento e depuração"
+            ],
+            "estrategia": "Demonstração orientada com programa simples e ferramentas de desenvolvimento",
+            "produto": "Fluxograma comentado de compilação e execução"
+          }
+        ],
+        "recursosPublicos": [
+          {
+            "tipo": "Vídeo",
+            "titulo": "Introdução aos Sistemas Operacionais - Universidade na Web",
+            "descricao": "Teleaula com evolução e classificações de sistemas operacionais",
+            "url": "https://www.youtube.com/watch?v=po_91auxkv8",
+            "oc": [
+              341,
+              342
+            ]
+          },
+          {
+            "tipo": "Vídeo",
+            "titulo": "Entenda a essência dos sistemas operacionais - Aula 01",
+            "descricao": "Hardware, software e função do sistema operacional",
+            "url": "https://www.youtube.com/watch?v=TOTKGiKKkGY",
+            "oc": [
+              341,
+              343
+            ]
+          },
+          {
+            "tipo": "PDF público",
+            "titulo": "IFSC - Introdução à Computação: Hardware, bits e bytes",
+            "descricao": "Material de apoio para hardware e sistema operacional",
+            "url": "https://wiki.sj.ifsc.edu.br/images/2/28/Aula_4_-_Hardware%2C_bits_e_bytes.pdf",
+            "oc": [
+              343,
+              344
+            ]
+          },
+          {
+            "tipo": "PDF público",
+            "titulo": "IFSC - Material de hardware",
+            "descricao": "Memórias, periféricos e barramentos",
+            "url": "https://wiki.sj.ifsc.edu.br/images/5/5f/Material_de_hardware_da_Deise.pdf",
+            "oc": [
+              343,
+              344
+            ]
+          }
+        ],
+        "atividadePratica": {
+          "titulo": "Laboratório investigativo - Conhecendo o computador e o sistema operacional",
+          "modalidade": "Em duplas; roteiro proposto, sem nota ou prazo atribuído",
+          "duracaoSugeridaMinutos": 60,
+          "etapas": [
+            "Identificar o sistema operacional instalado e sua versão, sem registrar nome do usuário, número de série ou outros dados pessoais.",
+            "Identificar processador, quantidade de RAM e tipo de armazenamento sem instalar programas desconhecidos.",
+            "Classificar cinco dispositivos em entrada, saída ou entrada/saída e explicar como se comunicam com o computador.",
+            "Desenhar o fluxo de execução: código-fonte, tradução/interpretação, vinculação, carregamento e depuração.",
+            "Comparar dois perfis de computadores e justificar qual atende melhor a um cenário de uso acadêmico."
+          ],
+          "entregaSugerida": "Relatório de até duas páginas com tabela, esquema e análise crítica. Publicação/entrega somente no Classroom autorizado."
+        },
+        "exercicios": [
+          "Explique duas responsabilidades centrais de um sistema operacional.",
+          "Descreva uma mudança importante na evolução histórica dos sistemas operacionais.",
+          "Diferencie monoprogramação de multiprogramação usando um exemplo.",
+          "Como um computador com múltiplos processadores se diferencia de um com um único processador?",
+          "Explique a diferença entre hardware, software de aplicação e sistema operacional.",
+          "Compare cache, RAM e armazenamento secundário quanto à finalidade e persistência.",
+          "Classifique teclado, monitor, webcam, impressora e SSD quanto à função de entrada/saída.",
+          "Qual a função de um barramento na comunicação entre componentes?",
+          "O que é pipelining e por que pode melhorar o aproveitamento do processador?",
+          "Diferencie tradutor, interpretador, linker, loader e depurador em um fluxo de execução."
+        ],
+        "materiaisAutorais": [],
+        "linksClassroom": [],
+        "nota": "Objetivos, metodologia, prática e questões são propostas pedagógicas elaboradas a partir dos OCs 341-345 do plano PPC 2026; não são transcrição literal nem atividades aprovadas para 2027.1."
       }
     },
     {
@@ -521,6 +661,146 @@
         ],
         "avaliacao": "Avaliações e pesos do plano 2026.2 devem ser confirmados para 2027.1",
         "materiais": "Nenhum arquivo autoral nem atividade foi publicado."
+      },
+      "unidade1": {
+        "status": "Roteiro didático sugerido para 2027.1 - aguardando revisão docente",
+        "objetivo": "Identificar as funções e a evolução dos sistemas operacionais, comparando tipos de SO, hierarquia de memória, dispositivos, barramentos e ferramentas de tradução e execução de programas.",
+        "encontros": [
+          {
+            "numero": 1,
+            "oc": [
+              341
+            ],
+            "titulo": "História, conceitos e funções dos sistemas operacionais",
+            "objetivos": [
+              "Definir sistema operacional e identificar suas responsabilidades",
+              "Reconhecer marcos da evolução dos sistemas operacionais"
+            ],
+            "estrategia": "Aula expositiva dialogada + linha do tempo colaborativa",
+            "produto": "Quadro comparativo de três gerações de sistemas operacionais"
+          },
+          {
+            "numero": 2,
+            "oc": [
+              342
+            ],
+            "titulo": "Classificações de sistemas operacionais",
+            "objetivos": [
+              "Diferenciar sistemas monoprogramáveis, multiprogramáveis e com múltiplos processadores"
+            ],
+            "estrategia": "Estudo de caso + discussão em pequenos grupos",
+            "produto": "Tabela de cenários e justificativa do tipo de sistema adequado"
+          },
+          {
+            "numero": 3,
+            "oc": [
+              343
+            ],
+            "titulo": "Hardware, software e hierarquia de memórias",
+            "objetivos": [
+              "Distinguir hardware de software",
+              "Comparar cache, memória principal e armazenamento secundário"
+            ],
+            "estrategia": "Análise de configuração de computador + mapa mental",
+            "produto": "Diagrama da hierarquia de memória com exemplos"
+          },
+          {
+            "numero": 4,
+            "oc": [
+              344
+            ],
+            "titulo": "Entrada/saída, barramentos e pipelining",
+            "objetivos": [
+              "Classificar dispositivos de E/S",
+              "Explicar fluxo de dados e papel do barramento e do pipelining"
+            ],
+            "estrategia": "Análise de arquitetura e situação-problema",
+            "produto": "Diagrama de comunicação CPU, memória e dispositivos"
+          },
+          {
+            "numero": 5,
+            "oc": [
+              345
+            ],
+            "titulo": "Tradutor, interpretador, linker, loader e depurador",
+            "objetivos": [
+              "Explicar as etapas entre código-fonte e execução",
+              "Distinguir compilação, interpretação, vinculação, carregamento e depuração"
+            ],
+            "estrategia": "Demonstração orientada com programa simples e ferramentas de desenvolvimento",
+            "produto": "Fluxograma comentado de compilação e execução"
+          }
+        ],
+        "recursosPublicos": [
+          {
+            "tipo": "Vídeo",
+            "titulo": "Introdução aos Sistemas Operacionais - Universidade na Web",
+            "descricao": "Teleaula com evolução e classificações de sistemas operacionais",
+            "url": "https://www.youtube.com/watch?v=po_91auxkv8",
+            "oc": [
+              341,
+              342
+            ]
+          },
+          {
+            "tipo": "Vídeo",
+            "titulo": "Entenda a essência dos sistemas operacionais - Aula 01",
+            "descricao": "Hardware, software e função do sistema operacional",
+            "url": "https://www.youtube.com/watch?v=TOTKGiKKkGY",
+            "oc": [
+              341,
+              343
+            ]
+          },
+          {
+            "tipo": "PDF público",
+            "titulo": "IFSC - Introdução à Computação: Hardware, bits e bytes",
+            "descricao": "Material de apoio para hardware e sistema operacional",
+            "url": "https://wiki.sj.ifsc.edu.br/images/2/28/Aula_4_-_Hardware%2C_bits_e_bytes.pdf",
+            "oc": [
+              343,
+              344
+            ]
+          },
+          {
+            "tipo": "PDF público",
+            "titulo": "IFSC - Material de hardware",
+            "descricao": "Memórias, periféricos e barramentos",
+            "url": "https://wiki.sj.ifsc.edu.br/images/5/5f/Material_de_hardware_da_Deise.pdf",
+            "oc": [
+              343,
+              344
+            ]
+          }
+        ],
+        "atividadePratica": {
+          "titulo": "Laboratório investigativo - Conhecendo o computador e o sistema operacional",
+          "modalidade": "Em duplas; roteiro proposto, sem nota ou prazo atribuído",
+          "duracaoSugeridaMinutos": 60,
+          "etapas": [
+            "Identificar o sistema operacional instalado e sua versão, sem registrar nome do usuário, número de série ou outros dados pessoais.",
+            "Identificar processador, quantidade de RAM e tipo de armazenamento sem instalar programas desconhecidos.",
+            "Classificar cinco dispositivos em entrada, saída ou entrada/saída e explicar como se comunicam com o computador.",
+            "Desenhar o fluxo de execução: código-fonte, tradução/interpretação, vinculação, carregamento e depuração.",
+            "Comparar dois perfis de computadores e justificar qual atende melhor a um cenário de uso acadêmico."
+          ],
+          "entregaSugerida": "Relatório de até duas páginas com tabela, esquema e análise crítica. Publicação/entrega somente no Classroom autorizado."
+        },
+        "exercicios": [
+          "Explique duas responsabilidades centrais de um sistema operacional.",
+          "Descreva uma mudança importante na evolução histórica dos sistemas operacionais.",
+          "Diferencie monoprogramação de multiprogramação usando um exemplo.",
+          "Como um computador com múltiplos processadores se diferencia de um com um único processador?",
+          "Explique a diferença entre hardware, software de aplicação e sistema operacional.",
+          "Compare cache, RAM e armazenamento secundário quanto à finalidade e persistência.",
+          "Classifique teclado, monitor, webcam, impressora e SSD quanto à função de entrada/saída.",
+          "Qual a função de um barramento na comunicação entre componentes?",
+          "O que é pipelining e por que pode melhorar o aproveitamento do processador?",
+          "Diferencie tradutor, interpretador, linker, loader e depurador em um fluxo de execução."
+        ],
+        "materiaisAutorais": [],
+        "linksClassroom": [],
+        "nota": "Objetivos, metodologia, prática e questões são propostas pedagógicas elaboradas a partir dos OCs 341-345 do plano PPC 2026; não são transcrição literal nem atividades aprovadas para 2027.1."
       }
     },
     {
@@ -770,6 +1050,146 @@
         ],
         "avaliacao": "Avaliações e pesos do plano 2026.2 devem ser confirmados para 2027.1",
         "materiais": "Nenhum arquivo autoral nem atividade foi publicado."
+      },
+      "unidade1": {
+        "status": "Roteiro didático sugerido para 2027.1 - aguardando revisão docente",
+        "objetivo": "Identificar as funções e a evolução dos sistemas operacionais, comparando tipos de SO, hierarquia de memória, dispositivos, barramentos e ferramentas de tradução e execução de programas.",
+        "encontros": [
+          {
+            "numero": 1,
+            "oc": [
+              341
+            ],
+            "titulo": "História, conceitos e funções dos sistemas operacionais",
+            "objetivos": [
+              "Definir sistema operacional e identificar suas responsabilidades",
+              "Reconhecer marcos da evolução dos sistemas operacionais"
+            ],
+            "estrategia": "Aula expositiva dialogada + linha do tempo colaborativa",
+            "produto": "Quadro comparativo de três gerações de sistemas operacionais"
+          },
+          {
+            "numero": 2,
+            "oc": [
+              342
+            ],
+            "titulo": "Classificações de sistemas operacionais",
+            "objetivos": [
+              "Diferenciar sistemas monoprogramáveis, multiprogramáveis e com múltiplos processadores"
+            ],
+            "estrategia": "Estudo de caso + discussão em pequenos grupos",
+            "produto": "Tabela de cenários e justificativa do tipo de sistema adequado"
+          },
+          {
+            "numero": 3,
+            "oc": [
+              343
+            ],
+            "titulo": "Hardware, software e hierarquia de memórias",
+            "objetivos": [
+              "Distinguir hardware de software",
+              "Comparar cache, memória principal e armazenamento secundário"
+            ],
+            "estrategia": "Análise de configuração de computador + mapa mental",
+            "produto": "Diagrama da hierarquia de memória com exemplos"
+          },
+          {
+            "numero": 4,
+            "oc": [
+              344
+            ],
+            "titulo": "Entrada/saída, barramentos e pipelining",
+            "objetivos": [
+              "Classificar dispositivos de E/S",
+              "Explicar fluxo de dados e papel do barramento e do pipelining"
+            ],
+            "estrategia": "Análise de arquitetura e situação-problema",
+            "produto": "Diagrama de comunicação CPU, memória e dispositivos"
+          },
+          {
+            "numero": 5,
+            "oc": [
+              345
+            ],
+            "titulo": "Tradutor, interpretador, linker, loader e depurador",
+            "objetivos": [
+              "Explicar as etapas entre código-fonte e execução",
+              "Distinguir compilação, interpretação, vinculação, carregamento e depuração"
+            ],
+            "estrategia": "Demonstração orientada com programa simples e ferramentas de desenvolvimento",
+            "produto": "Fluxograma comentado de compilação e execução"
+          }
+        ],
+        "recursosPublicos": [
+          {
+            "tipo": "Vídeo",
+            "titulo": "Introdução aos Sistemas Operacionais - Universidade na Web",
+            "descricao": "Teleaula com evolução e classificações de sistemas operacionais",
+            "url": "https://www.youtube.com/watch?v=po_91auxkv8",
+            "oc": [
+              341,
+              342
+            ]
+          },
+          {
+            "tipo": "Vídeo",
+            "titulo": "Entenda a essência dos sistemas operacionais - Aula 01",
+            "descricao": "Hardware, software e função do sistema operacional",
+            "url": "https://www.youtube.com/watch?v=TOTKGiKKkGY",
+            "oc": [
+              341,
+              343
+            ]
+          },
+          {
+            "tipo": "PDF público",
+            "titulo": "IFSC - Introdução à Computação: Hardware, bits e bytes",
+            "descricao": "Material de apoio para hardware e sistema operacional",
+            "url": "https://wiki.sj.ifsc.edu.br/images/2/28/Aula_4_-_Hardware%2C_bits_e_bytes.pdf",
+            "oc": [
+              343,
+              344
+            ]
+          },
+          {
+            "tipo": "PDF público",
+            "titulo": "IFSC - Material de hardware",
+            "descricao": "Memórias, periféricos e barramentos",
+            "url": "https://wiki.sj.ifsc.edu.br/images/5/5f/Material_de_hardware_da_Deise.pdf",
+            "oc": [
+              343,
+              344
+            ]
+          }
+        ],
+        "atividadePratica": {
+          "titulo": "Laboratório investigativo - Conhecendo o computador e o sistema operacional",
+          "modalidade": "Em duplas; roteiro proposto, sem nota ou prazo atribuído",
+          "duracaoSugeridaMinutos": 60,
+          "etapas": [
+            "Identificar o sistema operacional instalado e sua versão, sem registrar nome do usuário, número de série ou outros dados pessoais.",
+            "Identificar processador, quantidade de RAM e tipo de armazenamento sem instalar programas desconhecidos.",
+            "Classificar cinco dispositivos em entrada, saída ou entrada/saída e explicar como se comunicam com o computador.",
+            "Desenhar o fluxo de execução: código-fonte, tradução/interpretação, vinculação, carregamento e depuração.",
+            "Comparar dois perfis de computadores e justificar qual atende melhor a um cenário de uso acadêmico."
+          ],
+          "entregaSugerida": "Relatório de até duas páginas com tabela, esquema e análise crítica. Publicação/entrega somente no Classroom autorizado."
+        },
+        "exercicios": [
+          "Explique duas responsabilidades centrais de um sistema operacional.",
+          "Descreva uma mudança importante na evolução histórica dos sistemas operacionais.",
+          "Diferencie monoprogramação de multiprogramação usando um exemplo.",
+          "Como um computador com múltiplos processadores se diferencia de um com um único processador?",
+          "Explique a diferença entre hardware, software de aplicação e sistema operacional.",
+          "Compare cache, RAM e armazenamento secundário quanto à finalidade e persistência.",
+          "Classifique teclado, monitor, webcam, impressora e SSD quanto à função de entrada/saída.",
+          "Qual a função de um barramento na comunicação entre componentes?",
+          "O que é pipelining e por que pode melhorar o aproveitamento do processador?",
+          "Diferencie tradutor, interpretador, linker, loader e depurador em um fluxo de execução."
+        ],
+        "materiaisAutorais": [],
+        "linksClassroom": [],
+        "nota": "Objetivos, metodologia, prática e questões são propostas pedagógicas elaboradas a partir dos OCs 341-345 do plano PPC 2026; não são transcrição literal nem atividades aprovadas para 2027.1."
       }
     }
   ],
