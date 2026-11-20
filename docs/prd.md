@@ -50,3 +50,27 @@ Cada funcionalidade nova deve fazer referência ao ID de requisito correspondent
 - Confirmar implantação no GitHub Pages após a atualização da branch main.
 
 **Observação:** as três disciplinas são exemplos; o número exibido no indicador se refere a cards demonstrativos, não a ofertas confirmadas. Os indicadores de atividades, turmas e eventos oficiais permanecem em zero até sua publicação.
+
+
+## Incremento 0.3 - Portal por disciplina (20/11/2026)
+
+| ID | Requisito | Estado | Aceite |
+| --- | --- | --- | --- |
+| RF-016 | Abrir espaço individual de disciplina | Implementado | Clique no catálogo abre rota `#/disciplina/{id}`. |
+| RF-017 | Navegação por seis áreas da disciplina | Implementado | Visão geral, unidades, aulas, atividades, cronograma e referências. |
+| RF-018 | Estruturar seis unidades de ensino | Implementado | Unidades I-VI aparecem mesmo sem conteúdo, com indicação honesta de pendência. |
+| RF-019 | Separar dados acadêmicos públicos do layout | Implementado | Catálogo e avisos são lidos de `data/portal.json`. |
+| RF-020 | Mostrar apenas links externos HTTPS autorizados | Implementado | Sem URL configurada, portal exibe mensagem de indisponibilidade. |
+| RF-021 | Atualizar indicadores do dashboard a partir do catálogo | Implementado | Exibição distingue exemplos de turmas oficialmente confirmadas. |
+| RF-022 | Cadastrar turmas, aulas, cronogramas e recursos reais | Pendente | Depende de distribuição e aprovação institucional. |
+
+### Checklist manual de verificação
+- Abrir diretamente `#/disciplina/sistemas-operacionais`.
+- Alternar todas as seis abas e verificar o histórico de navegação.
+- Pesquisar disciplinas com e sem acentos.
+- Filtrar áreas, verificar estado vazio.
+- Confirmar que o JSON não contém informações pessoais ou documentos restritos.
+- Conferir comportamento no celular e com navegação por teclado.
+- Confirmar deploy do GitHub Pages da branch main.
+
+Testes manuais e validação por usuário final continuam **pendentes**, até execução documentada.
