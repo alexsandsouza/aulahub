@@ -119,3 +119,15 @@ Três turmas previstas organizadas: ADS262M01-SED, ENGS262M01-SED e SIS262N01-SE
 O catálogo em `data/portal.json` passou a conter 6 unidades, 31 objetos de conhecimento (341-371) e bibliografia básica/complementar identificada no plano de ensino corrigido de Sistemas Operacionais, PPC 2026. A interface detalha os objetos na aba Unidades e apresenta links para o acervo na aba Referências, quando fornecidos pelo plano.
 
 **Validação pedagógica:** o plano de origem identifica ADS e foi elaborado para 2026.2. A adaptação aos cursos Engenharia de Software e Sistemas de Informação, bem como a vigência no período 2027.1, depende de validação institucional. Não inventamos datas, conteúdos avaliativos nem materiais.
+
+
+## Unidade I de Sistemas Operacionais - material estruturado para 2027.1
+
+As páginas das três turmas de Sistemas Operacionais possuem agora, na aba **Unidades**:
+- cinco encontros didáticos propostos baseados nos objetos 341 a 345;
+- duas videoaulas e dois PDFs públicos de apoio;
+- roteiro sugerido de atividade prática investigativa (60 minutos);
+- dez questões para fixação;
+- aviso sobre a ausência de slides autorais, atividades e links Classroom publicados.
+
+A fundamentação curricular vem do plano corrigido de Sistemas Operacionais PPC 2026, identificado para ADS. Atividades, metodologia por encontro e questões são propostas elaboradas para planejamento docente, sujeitas à revisão. Não foram atribuídos prazos, notas ou links irrestritos a documentos protegidos.
