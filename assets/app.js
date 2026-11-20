@@ -49,10 +49,21 @@ function references(d){
  return '<div class="list-row"><strong>'+safe(item.titulo)+'</strong><small>'+safe(item.descricao||"")+'</small>'+(url?'<div><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer" class="reference-link">Consultar no acervo ↗</a></div>':'')+'</div>'
  }).join("")+'</div><p class="subtitle">O acesso às obras pode exigir autenticação na biblioteca institucional.</p>'
 }
+function unitOneLearning(d){
+ const u=d.unidade1;
+ if(!u)return "";
+ const link=(r)=>{const url=validExternal(r.url);return url?'<a class="reference-link" href="'+safe(url)+'" target="_blank" rel="noopener noreferrer">Abrir recurso externo ↗</a>':''};
+ return '<div class="unit1-learning"><div class="learn-banner"><span class="tag">Unidade I · OC 341-345</span><h3>Roteiro de estudo e aprendizagem</h3><p>'+safe(u.objetivo)+'</p><small>'+safe(u.status)+'</small></div>'+
+ '<h3>Sequência didática sugerida</h3><div class="lesson-grid">'+u.encontros.map(e=>'<article class="lesson-card"><span class="tag">Encontro '+safe(e.numero)+' · OC '+safe(e.oc.join(", "))+'</span><h4>'+safe(e.titulo)+'</h4><p>'+safe(e.estrategia)+'</p><small><strong>Resultado proposto:</strong> '+safe(e.produto)+'</small></article>').join("")+'</div>'+
+ '<h3>Leituras, vídeos e PDFs de apoio</h3><div class="learning-resources">'+u.recursosPublicos.map(r=>'<article class="resource-card"><span class="tag">'+safe(r.tipo)+'</span><h4>'+safe(r.titulo)+'</h4><p>'+safe(r.descricao)+'</p>'+link(r)+'</article>').join("")+'</div>'+
+ '<h3>Atividade prática proposta</h3><div class="panel"><strong>'+safe(u.atividadePratica.titulo)+'</strong><p class="subtitle">'+safe(u.atividadePratica.modalidade)+' · '+safe(u.atividadePratica.duracaoSugeridaMinutos)+' minutos sugeridos</p><ol class="exercise-list">'+u.atividadePratica.etapas.map(x=>'<li>'+safe(x)+'</li>').join("")+'</ol><p class="subtitle">'+safe(u.atividadePratica.entregaSugerida)+'</p></div>'+
+ '<h3>Exercícios de fixação</h3><div class="panel"><ol class="exercise-list">'+u.exercicios.map(x=>'<li>'+safe(x)+'</li>').join("")+'</ol></div>'+
+ '<div class="placeholder">Os slides autorais e os links do Classroom ainda não estão publicados. Esta proposta não define prazos ou notas.</div></div>'
+}
 function rows(items,empty){return items?.length?items.map(item=>'<div class="list-row"><strong>'+safe(item.titulo)+'</strong><small>'+safe(item.descricao||"")+'</small></div>').join(""):'<p class="placeholder">'+safe(empty)+'</p>'}
 function tabContent(d,tab){
 switch(tab){
-case "unidades":return '<h3>Organização por unidades de ensino</h3><p class="subtitle" style="margin-bottom:18px">Objetos de conhecimento organizados a partir do plano PPC 2026. Conteúdo proposto para 2027.1 sujeito à validação institucional.</p>'+units(d);
+case "unidades":return '<h3>Organização por unidades de ensino</h3><p class="subtitle" style="margin-bottom:18px">Objetos de conhecimento organizados a partir do plano PPC 2026. Conteúdo proposto para 2027.1 sujeito à validação institucional.</p>'+units(d)+unitOneLearning(d);
 case "aulas":return '<h3>Aulas e materiais didáticos</h3>'+rows(d.aulas,"Nenhuma aula ou material publicado ainda. Após autorização, os links dos arquivos ficarão disponíveis aqui.")+'<div style="margin-top:17px">'+linkOrPending(d.classroomUrl,"Abrir Google Classroom")+'</div>';
 case "atividades":return '<h3>Atividades acadêmicas</h3>'+rows(d.atividades,"Não há atividades cadastradas para esta disciplina. Datas e instruções serão adicionadas quando confirmadas.");
 case "cronograma":return '<h3>Cronograma da disciplina</h3>'+rows(d.cronograma,"Cronograma em preparação. Nenhuma data de aula ou avaliação foi confirmada.");
