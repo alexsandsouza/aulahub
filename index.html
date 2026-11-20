@@ -6,7 +6,8 @@
 <meta name="theme-color" content="#080f1d">
 <meta name="description" content="AulaHub - dashboard acadêmico com menu lateral, disciplinas, aulas, cronogramas e atividades.">
 <title>AulaHub | Dashboard Acadêmico</title>
-<link rel="stylesheet" href="./assets/style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("aulahub-theme")==="light"?"light":"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
+<link rel="stylesheet" href="./assets/style.css?v=0.6">
 <script src="./assets/app.js" defer></script>
 </head>
 <body>
@@ -28,9 +29,9 @@
 </aside>
 <div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
 <div class="workspace">
-<header class="workspace-header"><div class="workspace-title"><button type="button" id="open-sidebar" class="icon-button" aria-label="Abrir menu lateral" aria-expanded="false" aria-controls="sidebar">☰</button><div><span class="header-eyebrow">PORTAL ACADÊMICO</span><strong id="header-section">Dashboard Acadêmico</strong></div></div><div class="header-right"><span class="semester-badge">2027.1</span><span class="avatar" aria-hidden="true">AH</span></div></header>
+<header class="workspace-header"><div class="workspace-title"><button type="button" id="open-sidebar" class="icon-button" aria-label="Abrir menu lateral" aria-expanded="false" aria-controls="sidebar">☰</button><div><span class="header-eyebrow">PORTAL ACADÊMICO</span><strong id="header-section">Dashboard Acadêmico</strong></div></div><div class="header-right"><span class="semester-badge">▦ &nbsp;2027.1</span><button type="button" id="theme-toggle" class="theme-toggle" aria-label="Ativar tema claro" title="Alternar tema claro e escuro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Tema claro</span></button><span class="avatar" aria-hidden="true">AH</span></div></header>
 <main id="app" class="shell" tabindex="-1"><section><p class="muted">Carregando AulaHub...</p></section></main>
-<footer class="footer"><div class="shell"><span>© <span id="year"></span> AulaHub · Portal Acadêmico</span><span>2027.1 em preparação · Materiais restritos fora deste site público</span></div></footer>
+<footer class="footer site-footer"><div class="shell footer-grid"><div class="footer-brand"><a class="brand" href="#inicio">Aula<span>Hub</span></a><p>Portal acadêmico para organizar disciplinas, atividades e materiais didáticos.</p></div><div class="footer-links"><strong>Navegação</strong><a href="#disciplinas">Disciplinas</a><a href="#agenda">Agenda</a><a href="#avisos">Avisos</a></div><div class="footer-links"><strong>Informações</strong><a href="#materiais">Acesso aos materiais</a><a href="#sobre">Sobre o AulaHub</a><a href="#privacidade">Privacidade</a></div><div class="footer-meta"><span class="pill">Versão 0.6</span><p>© <span id="year"></span> AulaHub. Conteúdos sujeitos à confirmação institucional.</p></div></div></footer>
 </div>
 </div>
 <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
