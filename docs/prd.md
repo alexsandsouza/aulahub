@@ -101,3 +101,17 @@ Não há aulas, planos, horários nem atividades fictícias publicadas. Testes d
 | RNF-UX-002 | Responsividade do painel | Painel adapta a navegação sem barras laterais horizontais em telas estreitas. |
 
 **Nota:** este incremento não inclui autenticação ou backend; acessos a documentos permanecem governados pelo Drive/Classroom. Testes manuais em dispositivos e verificação da implantação pública permanecem pendentes.
+
+
+## Incremento 0.6 - Visual premium e temas claro/escuro (20/11/2026)
+
+| ID | Requisito | Critério de aceite |
+| --- | --- | --- |
+| RF-032 | Oferecer tema claro e escuro | Controle no cabeçalho alterna os temas, com rótulo e estado acessível. |
+| RF-033 | Persistir preferência visual localmente | Preferência é guardada em localStorage quando disponível, sem depender de login. |
+| RF-034 | Hero moderno | Apresenta mensagem concisa, chamadas funcionais e ilustração decorativa CSS. |
+| RF-035 | Painéis rápidos do dashboard | Mostra disciplinas reais previstas, agenda, avisos e materiais conforme dados disponíveis; estados vazios claros. |
+| RF-036 | Footer institucional útil | Inclui rotas para disciplinas, agenda, avisos, acesso aos materiais, sobre e privacidade. |
+| RNF-UX-003 | Layout premium responsivo | Cards e hero refluem em telas menores, com hierarquia visual consistente. |
+
+O mockup é referência **estética**, não fonte de datas ou arquivos publicados. Nenhuma das atividades e PDFs demonstrativos foi cadastrada. Verificação de código-fonte executada; testes visuais em navegadores e acessibilidade assistiva continuam pendentes.
