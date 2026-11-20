@@ -74,3 +74,17 @@ Cada funcionalidade nova deve fazer referência ao ID de requisito correspondent
 - Confirmar deploy do GitHub Pages da branch main.
 
 Testes manuais e validação por usuário final continuam **pendentes**, até execução documentada.
+
+## Incremento 0.4 - Dashboard de alocações 2027.1
+
+Fonte: declaração docente emitida em 20/11/2026, seção 2027/1. Os sete registros são **previstos** e não equivalem à confirmação de horário/grade definitiva.
+
+| ID | Requisito | Verificação |
+| --- | --- | --- |
+| RF-023 | Cadastrar todas as sete alocações previstas | Cada registro tem curso, código de turma, nome da disciplina e 66 horas. |
+| RF-024 | Mostrar KPI de turmas, cursos, horas e atividades | Dashboard calcula 7, 4, 462 h e zero atividades publicadas a partir do JSON. |
+| RF-025 | Mostrar distribuição de turmas por curso | Gráfico textual/visual apresenta ADS 2, Eng. Computação 1, Eng. Software 2, SI 2. |
+| RF-026 | Filtrar catálogo por curso | Seleção de curso combina com pesquisa por disciplina e período. |
+| RF-027 | Distinguir previsto de confirmado | Cards e páginas individuais identificam alocações previstas sem simular dados oficiais definitivos. |
+
+Não há aulas, planos, horários nem atividades fictícias publicadas. Testes de interface e deploy público ainda precisam de validação no navegador.
