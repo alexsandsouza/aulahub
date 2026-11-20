@@ -158,3 +158,15 @@ html[data-theme="light"] .icon-button{color:var(--text)}
 @media(max-width:900px){.hero-premium{grid-template-columns:1.3fr .7fr}.hero-premium .feature{grid-column:1 / -1}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:610px){.hero-premium{grid-template-columns:1fr;padding:22px;margin:18px 0}.hero-premium .hero-art{min-height:170px;max-width:240px;width:100%;margin:0 auto}.hero-premium .feature{display:block}.hero-premium h1{font-size:clamp(2.1rem,9vw,3.2rem)}.quick-grid,.footer-grid{grid-template-columns:1fr}.theme-label{display:none}.theme-toggle{padding:7px 10px}.header-right{gap:7px}.hero-premium .actions{gap:9px}}
 @media(prefers-reduced-motion:reduce){.theme-toggle{transition:none}}
+
+/* AulaHub 0.7 - estrutura didática de Sistemas Operacionais */
+.unit{background:var(--panel2);border-color:var(--line)}
+.unit-title{font-size:.96rem;line-height:1.36;margin:7px 0 14px;min-height:2.5em}
+.topic-list{padding-left:19px;margin:10px 0 19px;display:grid;gap:11px}
+.topic-list li{font-size:.86rem;color:var(--text);padding-left:3px;line-height:1.45}
+.topic-code{font-size:.7rem;font-weight:800;color:var(--blue);white-space:nowrap}
+.reference-list .list-row{display:grid;gap:5px}
+.reference-list small{color:var(--muted)}
+.reference-link{display:inline-flex;font-size:.84rem;font-weight:700;color:var(--blue);text-decoration:none;margin-top:6px}
+.reference-link:hover{text-decoration:underline}
+html[data-theme="light"] .unit{background:#f4f8ff;border:1px solid #d4e2f4}
