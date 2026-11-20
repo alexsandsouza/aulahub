@@ -50,3 +50,36 @@ O projeto segue o framework [SPECTION](https://github.com/alexsandsouza/spection
 ---
 
 Desenvolvido para uma experiência de aprendizagem organizada, acessível e responsável.
+
+
+## ✅ Incremento 0.3 - Dashboard e páginas de disciplinas
+
+A versão do código inclui:
+- Dashboard com indicadores baseados no catálogo público.
+- Catálogo com pesquisa, filtro por área e semestre.
+- Páginas individuais com seis abas: visão geral, unidades, aulas/materiais, atividades, cronograma e referências.
+- Estrutura para seis unidades de ensino por disciplina.
+- Avisos, agenda e estados vazios sem inventar informações acadêmicas.
+- Layout responsivo para desktop e dispositivos móveis.
+
+### Editar as disciplinas
+
+Edite `data/portal.json`. Preencha somente dados públicos que já estejam confirmados. A oferta de 2027.1 permanece em demonstração até publicação oficial. Não cadastre URL de edição do Drive, tokens, nomes de alunos, materiais restritos ou compartilhamento aberto.
+
+### Testar localmente
+
+Este portal carrega `data/portal.json` via `fetch`, portanto use um servidor HTTP local, por exemplo:
+
+```bash
+python -m http.server 8000
+```
+
+Em seguida, abra `http://localhost:8000`. Apenas abrir `index.html` como arquivo local pode bloquear a leitura do JSON.
+
+### Publicação
+
+O GitHub Pages está configurado pelo proprietário do repositório. URL informada: https://alexsandsouza.github.io/aulahub/
+
+### Situação da release
+
+Código implementado e versionado; verificação manual no site publicado e testes em dispositivos ainda pendentes.
