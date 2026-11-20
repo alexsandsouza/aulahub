@@ -53,3 +53,72 @@ document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()
 function route(){let hash;try{hash=decodeURIComponent(location.hash.slice(1))}catch{hash=""}const match=hash.match(/^\/disciplina\/([^/]+)(?:\/([^/]+))?$/);if(match){renderDetail(match[1],match[2]||"visao");scrollTo({top:0,behavior:"instant"})}else{renderHome();if(hash&&hash[0]!=="/"){requestAnimationFrame(()=>{const target=document.getElementById(hash);if(target)target.scrollIntoView()})}else scrollTo({top:0,behavior:"instant"})}}
 async function start(){try{const response=await fetch("./data/portal.json",{cache:"no-cache"});if(!response.ok)throw new Error("HTTP "+response.status);portal=await response.json();route();window.addEventListener("hashchange",route)}catch(e){app.innerHTML='<section><h1>Não foi possível carregar o portal</h1><p class="muted">Verifique a publicação do arquivo data/portal.json e recarregue a página.</p><button class="btn" onclick="location.reload()">Tentar novamente</button></section>';console.error("AulaHub:",e)}}
 start();
+
+/* AulaHub 0.5 - navegação lateral */
+(function setupSidebar(){
+  const body=document.body;
+  const toggle=document.getElementById("collapse-sidebar");
+  const open=document.getElementById("open-sidebar");
+  const backdrop=document.getElementById("sidebar-backdrop");
+  const side=document.getElementById("sidebar");
+  const header=document.getElementById("header-section");
+  const links=Array.from(document.querySelectorAll(".side-nav a[data-nav]"));
+  const isMobile=()=>window.matchMedia("(max-width: 900px)").matches;
+  function sync(){
+    const mobileOpen=body.classList.contains("mobile-sidebar-open");
+    const collapsed=body.classList.contains("sidebar-collapsed");
+    open.setAttribute("aria-expanded",String(mobileOpen));
+    toggle.setAttribute("aria-expanded",String(isMobile()?mobileOpen:!collapsed));
+    toggle.setAttribute("aria-label",isMobile()?"Fechar menu lateral":collapsed?"Expandir menu lateral":"Recolher menu lateral");
+    toggle.title=toggle.getAttribute("aria-label");
+    backdrop.hidden=!mobileOpen;
+    if(isMobile())side.removeAttribute("inert");
+  }
+  function closeMobile(restoreFocus=false){
+    const wasOpen=body.classList.contains("mobile-sidebar-open");
+    body.classList.remove("mobile-sidebar-open");
+    sync();
+    if(wasOpen&&restoreFocus)open.focus();
+  }
+  function toggleMenu(){
+    if(isMobile()){
+      body.classList.toggle("mobile-sidebar-open");
+    }else{
+      body.classList.toggle("sidebar-collapsed");
+    }
+    sync();
+  }
+  toggle.addEventListener("click",toggleMenu);
+  open.addEventListener("click",toggleMenu);
+  backdrop.addEventListener("click",()=>closeMobile(true));
+  document.addEventListener("keydown",e=>{
+    if(e.key==="Escape"&&body.classList.contains("mobile-sidebar-open"))closeMobile(true);
+  });
+  function updateActiveNavigation(){
+    const hash=location.hash.slice(1);
+    let selected="dashboard";
+    if(hash.startsWith("/disciplina/"))selected="disciplinas";
+    else if(["disciplinas","agenda","avisos","materiais","dashboard"].includes(hash))selected=hash;
+    const labels={dashboard:"Dashboard Acadêmico",disciplinas:"Disciplinas",agenda:"Agenda e atividades",avisos:"Avisos acadêmicos",materiais:"Materiais didáticos"};
+    header.textContent=labels[selected]||"Dashboard Acadêmico";
+    for(const link of links){
+      if(link.dataset.nav===selected)link.setAttribute("aria-current","page");
+      else link.removeAttribute("aria-current");
+    }
+  }
+  for(const link of links)link.addEventListener("click",()=>{
+    closeMobile();
+    // Mesmo quando o hash não muda, o link deve localizar a seção solicitada.
+    if(location.hash===(link.getAttribute("href")))requestAnimationFrame(()=>document.getElementById(link.dataset.nav)?.scrollIntoView());
+  });
+  window.addEventListener("hashchange",()=>{
+    updateActiveNavigation();
+    closeMobile();
+  });
+  window.addEventListener("resize",()=>{
+    if(!isMobile())body.classList.remove("mobile-sidebar-open");
+    sync();
+  });
+  updateActiveNavigation();
+  sync();
+})();
