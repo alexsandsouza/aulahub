@@ -1,57 +1,62 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="AulaHub - portal acadêmico para organização de disciplinas, cronogramas, atividades e avisos.">
-  <title>AulaHub | Seu espaço acadêmico</title>
-  <style>
-    :root{color-scheme:dark;--bg:#080f1d;--panel:#111c30;--panel2:#17243a;--line:#293950;--text:#f1f5ff;--muted:#a6b5cb;--accent:#58c5ff;--accent2:#a0a1ff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#153055 0,transparent 35%),var(--bg);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text)}
-    a{color:inherit}button,input{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-    .wrap{max-width:1120px;margin:auto;padding:0 24px}.top{position:sticky;top:0;z-index:3;background:#080f1de8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}.logo{font-size:1.32rem;font-weight:800;text-decoration:none;letter-spacing:-.04em}.logo span{color:var(--accent)}
-    .menu{display:flex;gap:24px;flex-wrap:wrap}.menu a{color:var(--muted);text-decoration:none;font-size:.93rem}.menu a:hover{color:white}
-    .hero{padding:86px 0 64px;display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:42px}.eyebrow{color:var(--accent);letter-spacing:.14em;text-transform:uppercase;font-weight:700;font-size:.75rem}
-    h1{font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:1.07;letter-spacing:-.055em;margin:14px 0 20px}h1 em{font-style:normal;color:var(--accent)}.lead{color:var(--muted);max-width:650px;font-size:1.12rem}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:12px;padding:13px 18px;font-weight:700;text-decoration:none;border:1px solid var(--line);background:var(--panel2)}
-    .btn.primary{background:linear-gradient(110deg,var(--accent),var(--accent2));border:0;color:#061025}.showcase{background:linear-gradient(150deg,#203960,#101c33);border:1px solid #34527b;border-radius:24px;padding:26px;box-shadow:0 22px 50px #0005}
-    .showcase .mini{color:var(--muted);font-size:.83rem}.showcase strong{display:block;font-size:1.45rem;margin:12px 0 20px}.chip{display:inline-flex;border:1px solid #497096;background:#173454;padding:6px 11px;border-radius:999px;color:#cbeaff;font-size:.78rem;margin:4px 5px 4px 0}
-    section{padding:36px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:20px}h2{font-size:1.8rem;margin:0;letter-spacing:-.035em}.sub{color:var(--muted);margin:5px 0 0}
-    .search{width:min(100%,370px);background:var(--panel);border:1px solid var(--line);border-radius:12px;color:white;padding:13px 15px}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:linear-gradient(155deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:24px;min-height:218px}
-    .card .mark{display:inline-flex;align-items:center;justify-content:center;background:#204264;border:1px solid #34577a;width:44px;height:44px;border-radius:12px;font-size:1.3rem}
-    .card h3{font-size:1.12rem;margin:18px 0 7px}.card p{color:var(--muted);font-size:.91rem;margin:0}.small{font-size:.8rem;color:var(--accent);margin-top:20px}
-    .info{background:#101e32;border:1px solid var(--line);border-radius:18px;padding:26px}.info h3{margin:0 0 8px}.info p{color:var(--muted);margin:0}.notice{border-left:3px solid var(--accent);padding-left:18px}
-    .empty{display:none;color:var(--muted);padding:24px 0}.footer{margin-top:54px;border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.85rem}
-    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:58px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.menu{gap:12px}}
-    @media(max-width:570px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;padding-top:16px;padding-bottom:16px;flex-direction:column}.hero{padding-top:40px}.showcase{padding:22px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090f1e"><meta name="description" content="AulaHub - Dashboard acadêmico de disciplinas, avisos e cronogramas.">
+<title>AulaHub | Dashboard Acadêmico</title>
+<style>
+:root{color-scheme:dark;--bg:#080f1d;--surface:#111d31;--surface2:#172740;--line:#2b3b52;--text:#f1f6ff;--muted:#a8b8cf;--blue:#59c5ff;--purple:#a3a3ff;--green:#72ddc4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#152e51 0%,transparent 37%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:5;background:#091121ed;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.head-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:76px}.brand{font-size:1.35rem;font-weight:850;letter-spacing:-.045em;text-decoration:none}.brand span{color:var(--blue)}
+nav{display:flex;gap:24px;flex-wrap:wrap}nav a{font-size:.92rem;text-decoration:none;color:var(--muted)}nav a:hover,nav a[aria-current]{color:var(--text)}
+.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:center;padding:62px 0 42px}.eyebrow{font-size:.78rem;letter-spacing:.14em;color:var(--blue);text-transform:uppercase;font-weight:800}
+h1{font-size:clamp(2.45rem,5vw,4.4rem);line-height:1.1;letter-spacing:-.05em;margin:12px 0 17px}h1 span{color:var(--blue)}.lead{color:var(--muted);font-size:1.05rem;max-width:640px;margin:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.button{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);text-decoration:none;font-weight:700;color:var(--text)}.button.primary{border:0;background:linear-gradient(115deg,var(--blue),var(--purple));color:#06132b}
+.welcome{padding:27px;background:linear-gradient(145deg,#203a61,#101c32);border:1px solid #35557c;border-radius:24px;box-shadow:0 18px 45px #0003}.welcome small{color:#bad5fa}.welcome h2{font-size:1.5rem;margin:12px 0;letter-spacing:-.02em}.welcome p{color:var(--muted);margin:0}.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#193c59;color:#c5ecff;border:1px solid #366b91;font-size:.76rem;margin-top:10px}
+section{padding:20px 0 27px;scroll-margin-top:90px}.section-header{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:15px;margin-bottom:20px}h2{font-size:1.65rem;letter-spacing:-.035em;margin:0}.desc{color:var(--muted);font-size:.92rem;margin:5px 0 0}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.metric{border:1px solid var(--line);background:linear-gradient(155deg,#182a45,#111b2f);border-radius:17px;padding:20px}.metric .k{font-size:.85rem;color:var(--muted)}.metric strong{font-size:2.15rem;letter-spacing:-.035em;display:block;margin:5px 0}.metric .hint{font-size:.78rem;color:#90b2d8}.metric .icon{font-size:1.3rem;float:right}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:19px}input,select{background:#101b2e;border:1px solid #34455e;color:var(--text);border-radius:11px;padding:12px 14px;min-width:0}input{flex:2 1 240px}select{flex:1 1 150px}label.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#182941,#101a2c);border:1px solid var(--line);border-radius:18px;padding:23px;display:flex;flex-direction:column;gap:12px}.card .topline{display:flex;justify-content:space-between;align-items:center;gap:8px}.symbol{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:#20456b;color:#ccecff;font-size:1.3rem}.status{font-size:.74rem;color:#c0d4e7;border:1px solid #3e536c;border-radius:999px;padding:4px 9px}.card h3{font-size:1.12rem;margin:3px 0 0}.card p{color:var(--muted);font-size:.89rem;margin:0}.card .meta{font-size:.82rem;color:#8fb9df}.card .card-bottom{border-top:1px solid var(--line);padding-top:12px;margin-top:auto;font-size:.8rem;color:var(--blue)}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:18px}.panel{border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:23px}.panel h3{margin:0 0 16px;font-size:1.05rem}.notice{border-left:3px solid var(--blue);padding:3px 0 3px 15px}.notice strong{display:block;margin-bottom:7px}.notice p,.empty{margin:0;color:var(--muted);font-size:.92rem}.item{border-top:1px solid var(--line);padding:14px 0}.item:first-of-type{border-top:0}.item strong{display:block}.item small{color:var(--muted)}.item p{margin:4px 0 0;color:var(--muted);font-size:.89rem}
+.note{margin-top:17px;color:var(--muted);font-size:.86rem}.footer{border-top:1px solid var(--line);margin-top:45px;padding:25px 0 35px;color:var(--muted);font-size:.82rem}.footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+#sem-resultados{display:none;padding:18px 0;color:var(--muted)}
+@media(max-width:850px){.hero,.two{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.hero{padding-top:46px}}
+@media(max-width:580px){.head-inner{align-items:flex-start;flex-direction:column;padding:15px 0;gap:10px}nav{gap:16px}.metrics,.cards{grid-template-columns:1fr}.hero{padding-top:35px}.metric{padding:17px}.welcome{padding:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="#inicio" class="logo" aria-label="AulaHub, início">Aula<span>Hub</span></a>
-<nav class="menu" aria-label="Navegação principal"><a href="#disciplinas">Disciplinas</a><a href="#avisos">Avisos</a><a href="#acesso">Acesso aos materiais</a></nav></div></header>
-<main id="inicio" class="wrap">
-  <div class="hero"><div><div class="eyebrow">Portal acadêmico</div><h1>Suas aulas.<br><em>Tudo em um só lugar.</em></h1>
-  <p class="lead">Um espaço para encontrar orientações das disciplinas, acompanhar atividades e consultar avisos acadêmicos com clareza e organização.</p>
-  <div class="actions"><a class="btn primary" href="#disciplinas">Explorar disciplinas</a><a class="btn" href="#acesso">Como acessar materiais</a></div></div>
-  <aside class="showcase" aria-label="Resumo do portal"><div class="mini">Bem-vindo ao AulaHub</div><strong>Organização para aprender melhor.</strong><span class="chip">Disciplinas</span><span class="chip">Atividades</span><span class="chip">Cronogramas</span><span class="chip">Avisos</span><p class="mini">Em preparação para o próximo período letivo.</p></aside></div>
-  <section id="disciplinas" aria-labelledby="disciplinas-title"><div class="section-head"><div><h2 id="disciplinas-title">Disciplinas</h2><p class="sub">Estrutura inicial. As turmas e conteúdos serão publicados após confirmação.</p></div><input id="busca" class="search" type="search" aria-label="Buscar disciplinas" placeholder="Buscar disciplina..." autocomplete="off"></div>
-  <div id="cards" class="grid">
-    <article class="card" data-name="Sistemas Operacionais"><span class="mark" aria-hidden="true">⚙</span><h3>Sistemas Operacionais</h3><p>Área reservada para ementa, plano de aulas e atividades.</p><div class="small">Conteúdo em preparação</div></article>
-    <article class="card" data-name="Engenharia de Software"><span class="mark" aria-hidden="true">⌘</span><h3>Engenharia de Software</h3><p>Área reservada para projetos, orientações e cronograma.</p><div class="small">Conteúdo em preparação</div></article>
-    <article class="card" data-name="Lógica e Programação"><span class="mark" aria-hidden="true">⌨</span><h3>Lógica e Programação</h3><p>Área reservada para exercícios e recursos de aprendizagem.</p><div class="small">Conteúdo em preparação</div></article>
-  </div><p id="vazio" class="empty" role="status">Nenhuma disciplina corresponde à busca.</p></section>
-  <section id="avisos"><div class="section-head"><div><h2>Avisos acadêmicos</h2><p class="sub">Comunicados importantes em destaque.</p></div></div>
-  <div class="info notice"><h3>Portal em construção</h3><p>Os avisos, prazos e cronogramas oficiais serão adicionados quando o novo período letivo estiver definido.</p></div></section>
-  <section id="acesso"><div class="section-head"><div><h2>Acesso aos materiais</h2><p class="sub">Organização com respeito à autoria e ao acesso de cada turma.</p></div></div>
-  <div class="info"><h3>Materiais disponibilizados em ambientes autorizados</h3><p>Slides, apostilas, avaliações e arquivos restritos não são hospedados neste site público. Quando disponíveis, devem ser acessados pelos canais oficiais indicados pelo professor, como Google Classroom ou pastas do Google Drive com permissão apropriada.</p></div></section>
-</main>
-<footer class="footer"><div class="wrap">© <span id="ano"></span> AulaHub · Portal acadêmico · Desenvolvido para apoio à aprendizagem.</div></footer>
+<header class="header"><div class="container head-inner"><a class="brand" href="#inicio">Aula<span>Hub</span></a><nav aria-label="Navegação principal"><a href="#dashboard">Dashboard</a><a href="#disciplinas">Disciplinas</a><a href="#agenda">Agenda</a><a href="#avisos">Avisos</a><a href="#materiais">Materiais</a></nav></div></header>
+<main class="container" id="inicio">
+<div class="hero"><div><div class="eyebrow">Seu portal acadêmico · 2027.1</div><h1>Aprender com <span>organização.</span></h1><p class="lead">Disciplinas, avisos e atividades em um só lugar. Um espaço pensado para facilitar o acompanhamento da vida acadêmica.</p><div class="actions"><a class="button primary" href="#dashboard">Explorar dashboard</a><a class="button" href="#disciplinas">Ver disciplinas</a></div></div>
+<aside class="welcome"><small>BEM-VINDO AO AULAHUB</small><h2>Seu semestre começa aqui.</h2><p>O portal está sendo preparado para 2027.1. As informações de turmas e prazos serão adicionadas após confirmação.</p><span class="tag">Versão inicial · Em preparação</span></aside></div>
+<section id="dashboard" aria-labelledby="title-dashboard"><div class="section-header"><div><h2 id="title-dashboard">Dashboard acadêmico</h2><p class="desc">Visão geral da estrutura do portal para o semestre 2027.1.</p></div></div>
+<div class="metrics"><div class="metric"><span class="icon" aria-hidden="true">▦</span><span class="k">Disciplinas cadastradas</span><strong id="num-disciplinas">0</strong><span class="hint">Exemplos, não turmas confirmadas</span></div>
+<div class="metric"><span class="icon" aria-hidden="true">◫</span><span class="k">Turmas confirmadas</span><strong>0</strong><span class="hint">Aguardando distribuição</span></div>
+<div class="metric"><span class="icon" aria-hidden="true">▤</span><span class="k">Atividades publicadas</span><strong>0</strong><span class="hint">Nenhum prazo oficial divulgado</span></div>
+<div class="metric"><span class="icon" aria-hidden="true">◷</span><span class="k">Próximos eventos</span><strong>0</strong><span class="hint">Agenda a confirmar</span></div></div></section>
+<section id="disciplinas" aria-labelledby="title-disciplinas"><div class="section-header"><div><h2 id="title-disciplinas">Disciplinas</h2><p class="desc">Prévia da estrutura de navegação. As ofertas de 2027.1 ainda não estão confirmadas.</p></div></div>
+<div class="filters"><label for="busca" class="sr-only">Pesquisar disciplina</label><input id="busca" type="search" placeholder="Pesquisar disciplina..." autocomplete="off"><label class="sr-only" for="filtro-curso">Filtrar por área</label><select id="filtro-curso"><option value="todos">Todas as áreas</option><option value="computacao">Computação</option><option value="software">Desenvolvimento de software</option></select><label class="sr-only" for="filtro-periodo">Período letivo</label><select id="filtro-periodo"><option value="2027.1">2027.1 (planejamento)</option></select></div>
+<div class="cards" id="cards" aria-live="polite">
+<article class="card" data-title="Sistemas Operacionais" data-area="computacao"><div class="topline"><span class="symbol" aria-hidden="true">⚙</span><span class="status">A confirmar</span></div><h3>Sistemas Operacionais</h3><p>Conceitos, recursos computacionais, processos e organização de sistemas.</p><span class="meta">Área: Computação</span><div class="card-bottom">Turma, materiais e plano de ensino: pendentes</div></article>
+<article class="card" data-title="Engenharia de Software" data-area="software"><div class="topline"><span class="symbol" aria-hidden="true">⌘</span><span class="status">A confirmar</span></div><h3>Engenharia de Software</h3><p>Processos, práticas de desenvolvimento e projetos acadêmicos.</p><span class="meta">Área: Desenvolvimento de software</span><div class="card-bottom">Turma, materiais e plano de ensino: pendentes</div></article>
+<article class="card" data-title="Lógica e Programação Estruturada" data-area="software"><div class="topline"><span class="symbol" aria-hidden="true">⌨</span><span class="status">A confirmar</span></div><h3>Lógica e Programação Estruturada</h3><p>Algoritmos, estruturas de decisão, repetição e prática de programação.</p><span class="meta">Área: Desenvolvimento de software</span><div class="card-bottom">Turma, materiais e plano de ensino: pendentes</div></article>
+</div><p id="sem-resultados" role="status">Nenhuma disciplina corresponde aos filtros selecionados.</p></section>
+<section id="agenda"><div class="section-header"><div><h2>Agenda e atividades</h2><p class="desc">Sem datas inventadas: somente prazos oficialmente confirmados serão exibidos aqui.</p></div></div>
+<div class="two"><div class="panel"><h3>Próximas atividades</h3><div class="notice"><strong>Nenhuma atividade publicada</strong><p>Após a definição das turmas, os trabalhos, atividades e entregas aparecerão aqui, com suas respectivas disciplinas.</p></div></div><div class="panel"><h3>Cronograma acadêmico</h3><div class="item"><strong>2027.1 · Planejamento</strong><small>Datas e aulas a confirmar</small><p>O cronograma será atualizado conforme informações acadêmicas oficiais.</p></div></div></div></section>
+<section id="avisos"><div class="section-header"><div><h2>Avisos</h2><p class="desc">Comunicados para orientar sua navegação.</p></div></div><div class="panel"><div class="notice"><strong>Bem-vindo à versão inicial do AulaHub</strong><p>O catálogo atual é demonstrativo. As disciplinas, links, turmas e comunicados serão revisados para 2027.1 antes da publicação definitiva.</p></div></div></section>
+<section id="materiais"><div class="section-header"><div><h2>Acesso aos materiais</h2><p class="desc">Conteúdos acadêmicos com respeito à autoria e às permissões de acesso.</p></div></div><div class="panel"><h3>Materiais de aula em ambientes autorizados</h3><p class="empty">Apostilas, slides, avaliações e gabaritos restritos não ficam hospedados neste portal público. Quando liberados pelo professor, os alunos poderão acessar recursos pelo Google Classroom ou pelo Google Drive, sujeitos às permissões de cada turma.</p><p class="note">O AulaHub não exige login nesta versão e não armazena dados pessoais dos estudantes. O GitHub Pages não oferece controle de acesso individual aos arquivos públicos.</p></div></section>
+</main><footer class="footer"><div class="container"><span>© <span id="ano"></span> AulaHub · Portal acadêmico</span><span>Desenvolvido para organizar a aprendizagem · 2027.1 em preparação</span></div></footer>
 <script>
-document.getElementById('ano').textContent = new Date().getFullYear();
-const busca=document.getElementById('busca');const cards=[...document.querySelectorAll('#cards .card')];
-busca.addEventListener('input',()=>{const q=busca.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();let n=0;cards.forEach(c=>{const v=c.dataset.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(q);c.hidden=!v;c.style.display=v?'':'none';if(v)n++});document.getElementById('vazio').style.display=n?'none':'block'});
-</script></body></html>
+"use strict";
+document.getElementById("ano").textContent=new Date().getFullYear();
+const cards=Array.from(document.querySelectorAll("#cards .card"));
+document.getElementById("num-disciplinas").textContent=String(cards.length);
+const busca=document.getElementById("busca"),curso=document.getElementById("filtro-curso"),vazio=document.getElementById("sem-resultados");
+function normalizar(txt){return txt.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("pt-BR")}
+function filtrar(){const q=normalizar(busca.value.trim());let visiveis=0;for(const c of cards){const ok=normalizar(c.dataset.title).includes(q)&&(curso.value==="todos"||curso.value===c.dataset.area);c.hidden=!ok;if(ok)visiveis++}vazio.style.display=visiveis?"none":"block"}
+busca.addEventListener("input",filtrar);curso.addEventListener("change",filtrar);
+</script>
+</body></html>
