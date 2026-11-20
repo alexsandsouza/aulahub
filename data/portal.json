@@ -1,0 +1,60 @@
+{
+  "periodos": [
+    {
+      "id": "2027.1",
+      "titulo": "2027.1",
+      "status": "planejamento"
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "sistemas-operacionais",
+      "nome": "Sistemas Operacionais",
+      "area": "Computação",
+      "curso": "A confirmar",
+      "turma": "A confirmar",
+      "periodo": "2027.1",
+      "status": "demonstracao",
+      "descricao": "Organização de processos, memória, arquivos e recursos computacionais.",
+      "classroomUrl": null,
+      "planoUrl": null,
+      "unidades": []
+    },
+    {
+      "id": "engenharia-de-software",
+      "nome": "Engenharia de Software",
+      "area": "Desenvolvimento de software",
+      "curso": "A confirmar",
+      "turma": "A confirmar",
+      "periodo": "2027.1",
+      "status": "demonstracao",
+      "descricao": "Processos, qualidade, projeto e manutenção de software.",
+      "classroomUrl": null,
+      "planoUrl": null,
+      "unidades": []
+    },
+    {
+      "id": "logica-programacao",
+      "nome": "Lógica e Programação Estruturada",
+      "area": "Desenvolvimento de software",
+      "curso": "A confirmar",
+      "turma": "A confirmar",
+      "periodo": "2027.1",
+      "status": "demonstracao",
+      "descricao": "Fundamentos de algoritmos e estruturas de controle.",
+      "classroomUrl": null,
+      "planoUrl": null,
+      "unidades": []
+    }
+  ],
+  "avisos": [
+    {
+      "id": "boas-vindas",
+      "titulo": "AulaHub em preparação",
+      "texto": "As disciplinas exibidas são exemplos de navegação. A oferta de turmas, datas e materiais será cadastrada após confirmação institucional.",
+      "data": null
+    }
+  ],
+  "eventos": [],
+  "atividades": []
+}
