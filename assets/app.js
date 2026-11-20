@@ -31,15 +31,32 @@ app.innerHTML='<div class="hero hero-premium"><div class="hero-copy"><div class=
 function filter(){const q=norm($("#busca").value),a=$("#area").value,p=$("#periodo").value;const arr=disciplinas.filter(d=>norm(d.nome).includes(q)&&(!a||a===d.curso)&&d.periodo===p);$("#course-list").innerHTML=arr.map(d=>'<article class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><span class="mark" aria-hidden="true">▣</span><span class="tag">'+(d.status==="confirmada"?"Confirmada":"Prevista · 2027.1")+'</span></div><h3>'+safe(d.nome)+'</h3><p>'+safe(d.descricao)+'</p><small class="muted">'+safe(d.curso)+' · '+safe(d.turma)+' · '+safe(d.cargaHoraria)+' h'+'</small><div class="card-foot"><span class="muted">Espaço da disciplina</span><a href="#/disciplina/'+encodeURIComponent(d.id)+'">Acessar →</a></div></article>').join("");$("#empty").style.display=arr.length?"none":"block"}
 $("#busca").addEventListener("input",filter);$("#area").addEventListener("change",filter);$("#periodo").addEventListener("change",filter);filter();
 }
-function units(d){const stored=d.unidades||[];return '<div class="six">'+Array.from({length:6},(_,i)=>{const u=stored.find(x=>Number(x.numero)===i+1);return '<article class="unit"><strong>Unidade '+["I","II","III","IV","V","VI"][i]+'</strong><div>'+safe(u?.titulo||"Conteúdo a definir")+'</div><small>'+safe(u?.descricao||"Aulas, recursos e atividades pendentes de publicação")+'</small></article>'}).join("")+'</div>'}
+function units(d){
+ const stored=d.unidades||[];
+ return '<div class="six">'+Array.from({length:6},(_,i)=>{
+ const u=stored.find(x=>Number(x.numero)===i+1);
+ const objetos=u?.objetos||[];
+ return '<article class="unit"><strong>Unidade '+["I","II","III","IV","V","VI"][i]+'</strong><h3 class="unit-title">'+safe(u?.titulo||"Conteúdo a definir")+'</h3>'+
+ (objetos.length?'<ol class="topic-list">'+objetos.map(o=>'<li><span class="topic-code">OC '+safe(o.codigo)+'</span> '+safe(o.tema)+'</li>').join("")+'</ol>':'<p class="muted">Conteúdos aguardando publicação</p>')+
+ '<small class="muted">Materiais e atividades: aguardando autorização</small></article>'
+ }).join("")+'</div>'
+}
+function references(d){
+ const a=d.referencias||[];
+ if(!a.length)return '<p class="placeholder">As referências serão adicionadas conforme o plano aprovado.</p>';
+ return '<div class="reference-list">'+a.map(item=>{
+ const url=validExternal(item.url);
+ return '<div class="list-row"><strong>'+safe(item.titulo)+'</strong><small>'+safe(item.descricao||"")+'</small>'+(url?'<div><a href="'+safe(url)+'" target="_blank" rel="noopener noreferrer" class="reference-link">Consultar no acervo ↗</a></div>':'')+'</div>'
+ }).join("")+'</div><p class="subtitle">O acesso às obras pode exigir autenticação na biblioteca institucional.</p>'
+}
 function rows(items,empty){return items?.length?items.map(item=>'<div class="list-row"><strong>'+safe(item.titulo)+'</strong><small>'+safe(item.descricao||"")+'</small></div>').join(""):'<p class="placeholder">'+safe(empty)+'</p>'}
 function tabContent(d,tab){
 switch(tab){
-case "unidades":return '<h3>Organização por unidades de ensino</h3><p class="subtitle" style="margin-bottom:18px">Estrutura de seis unidades. Não há ementas ou planos oficiais cadastrados.</p>'+units(d);
+case "unidades":return '<h3>Organização por unidades de ensino</h3><p class="subtitle" style="margin-bottom:18px">Objetos de conhecimento organizados a partir do plano PPC 2026. Conteúdo proposto para 2027.1 sujeito à validação institucional.</p>'+units(d);
 case "aulas":return '<h3>Aulas e materiais didáticos</h3>'+rows(d.aulas,"Nenhuma aula ou material publicado ainda. Após autorização, os links dos arquivos ficarão disponíveis aqui.")+'<div style="margin-top:17px">'+linkOrPending(d.classroomUrl,"Abrir Google Classroom")+'</div>';
 case "atividades":return '<h3>Atividades acadêmicas</h3>'+rows(d.atividades,"Não há atividades cadastradas para esta disciplina. Datas e instruções serão adicionadas quando confirmadas.");
 case "cronograma":return '<h3>Cronograma da disciplina</h3>'+rows(d.cronograma,"Cronograma em preparação. Nenhuma data de aula ou avaliação foi confirmada.");
-case "referencias":return '<h3>Bibliografia e referências</h3>'+rows(d.referencias,"As referências bibliográficas serão adicionadas conforme o plano de ensino aprovado.");
+case "referencias":return '<h3>Bibliografia e referências</h3>'+references(d);
 default:return '<div class="detail-grid"><div class="panel"><h3>Sobre a disciplina</h3><p>'+safe(d.descricao)+'</p><div class="list-row"><strong>Situação acadêmica</strong><small>'+(d.status==="confirmada"?"Turma confirmada":"Turma prevista na declaração - sujeita à confirmação")+'</small></div><div class="list-row"><strong>Plano de ensino</strong>'+linkOrPending(d.planoUrl,"Consultar plano de ensino")+'</div></div><div class="panel"><h3>Informações da turma</h3><div class="list-row"><strong>Período</strong><small>'+safe(d.periodo)+'</small></div><div class="list-row"><strong>Curso</strong><small>'+safe(d.curso)+'</small></div><div class="list-row"><strong>Turma</strong><small>'+safe(d.turma)+'</small></div><div class="list-row"><strong>Carga horária</strong><small>'+safe(d.cargaHoraria)+' h</small></div><div class="list-row"><strong>Classroom</strong>'+linkOrPending(d.classroomUrl,"Acessar turma")+'</div></div></div>';
 }}
 function renderDetail(id,tab){
