@@ -53,3 +53,8 @@
 }
 @media(max-width:570px){.workspace-header{min-height:68px;padding:10px 16px}.header-eyebrow{font-size:.59rem}.avatar{display:none}.semester-badge{padding:5px 9px}.workspace .shell{width:calc(100% - 30px)}.workspace .hero{padding-top:25px}}
 @media(prefers-reduced-motion:reduce){.sidebar,.app-layout{transition:none}}
+
+/* Ajustes de navegação e acessibilidade */
+.side-nav{flex-wrap:nowrap}
+.side-nav a{flex-shrink:0}
+@media(max-width:900px){.mobile-sidebar-open{overflow:hidden}.mobile-sidebar-open .sidebar{overflow-y:auto}}
