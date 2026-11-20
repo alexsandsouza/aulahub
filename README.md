@@ -98,3 +98,15 @@ Para atualizar uma turma, edite o item de mesmo `id` em `data/portal.json`. Não
 O AulaHub possui agora navegação lateral com os itens Dashboard, Disciplinas, Agenda e atividades, Avisos e Materiais. No desktop, a barra é fixa e recolhível; em telas pequenas, abre em painel sobreposto e fecha ao selecionar uma seção, ao pressionar Escape ou ao tocar fora dela. A seção ativa é destacada.
 
 A organização dos dados previstos de 2027.1 foi preservada, assim como as páginas individuais de disciplinas e a separação de materiais restritos do GitHub Pages.
+
+
+## AulaHub 0.6 - Identidade visual premium
+
+- Temas escuro e claro, alternáveis no cabeçalho. O tema escolhido é salvo no navegador, quando o armazenamento local estiver disponível.
+- Hero moderno com ilustração decorativa feita em CSS, sem dependências de imagens externas.
+- Cards e indicadores refinados, áreas de acesso rápido, navegação lateral e footer com links internos.
+- Visão de disciplinas previstas baseada nas sete turmas e 462 horas de 2027.1; dados não confirmados permanecem identificados.
+- Sem datas ou materiais fictícios do protótipo visual. O portal é público; conteúdos restritos continuam fora do GitHub Pages.
+
+### Verificação recomendada
+Abrir em desktop e celular, alternar tema, recarregar a página, testar navegação por teclado, recolher menu lateral, acessar páginas de disciplinas, verificar cards e links. O teste em navegadores reais ainda não foi registrado como concluído.
