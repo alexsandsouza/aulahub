@@ -146,3 +146,13 @@ Base curricular: Plano de Ensino Aprendizagem de Sistemas Operacionais PPC 2026,
 | RF-047 | Separar planejamento e publicação oficial | Indicar que slides autorais, atividades avaliativas e Classroom ainda aguardam liberação. |
 
 O conteúdo pedagógico proposto foi elaborado a partir dos tópicos do plano e não se confunde com transcrição literal do documento. Os links externos não garantem acesso gratuito permanente e devem ser revisados. Testes visuais de navegação e publicação não executados.
+
+## Incremento 0.9 - Primeira turma no Classroom
+
+- Turma ADS262M01-SED, Sistemas Operacionais, 2027.1: sala criada pelo professor no Google Classroom.
+- Primeiro material de orientação da Unidade I: publicação informada pelo professor.
+- Tela de turma no AulaHub apresenta o status, o resumo da Unidade I e o atalho interno para o roteiro didático.
+- Link completo de acesso à turma ainda não fornecido. Botão externo permanece pendente; código/URL de convite não devem ser incluídos no repositório.
+- As duas outras turmas de Sistemas Operacionais permanecem com seus próprios estados, sem simular publicação no Classroom.
+
+RF-048: Exibir estado real de criação da sala; RF-049: Diferenciar publicação informada pelo professor de validação externa; RF-050: Não inventar URL de sala.
