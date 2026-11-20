@@ -4,27 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#080f1d">
-<meta name="description" content="AulaHub - portal acadêmico com dashboard, disciplinas, aulas, cronogramas e atividades.">
-<title>AulaHub | Portal Acadêmico</title>
+<meta name="description" content="AulaHub - dashboard acadêmico com menu lateral, disciplinas, aulas, cronogramas e atividades.">
+<title>AulaHub | Dashboard Acadêmico</title>
 <link rel="stylesheet" href="./assets/style.css">
 <script src="./assets/app.js" defer></script>
 </head>
 <body>
-<a href="#dashboard" class="sr-only">Ir ao conteúdo principal</a>
-<header class="top"><div class="shell top-inner">
-<a class="brand" href="#inicio" aria-label="AulaHub, página inicial">Aula<span>Hub</span></a>
-<nav aria-label="Navegação principal">
-<a href="#dashboard">Dashboard</a>
-<a href="#disciplinas">Disciplinas</a>
-<a href="#agenda">Agenda</a>
-<a href="#avisos">Avisos</a>
-<a href="#materiais">Materiais</a>
-</nav>
-</div></header>
-<main id="app" class="shell"><section><p class="muted">Carregando AulaHub...</p></section></main>
-<footer class="footer"><div class="shell">
-<span>© <span id="year"></span> AulaHub · Portal Acadêmico</span>
-<span>2027.1 em preparação · Materiais restritos fora deste site público</span>
-</div></footer>
+<a href="#app" class="skip-link">Pular para o conteúdo principal</a>
+<div class="app-layout" id="layout">
+<aside id="sidebar" class="sidebar" aria-label="Menu lateral do AulaHub">
+  <div class="side-header"><a href="#inicio" class="brand" aria-label="AulaHub - início">Aula<span>Hub</span></a><button type="button" id="collapse-sidebar" class="icon-button collapse-button" aria-label="Recolher menu lateral" aria-expanded="true" aria-controls="sidebar" title="Recolher menu">☰</button></div>
+  <div class="side-semester"><span class="side-semester-label">PERÍODO LETIVO</span><strong>2027.1</strong><small>Turmas previstas</small></div>
+  <nav class="side-nav" aria-label="Navegação principal">
+    <span class="side-section">PRINCIPAL</span>
+    <a href="#dashboard" data-nav="dashboard" title="Dashboard"><span class="side-icon" aria-hidden="true">▦</span><span class="nav-label">Dashboard</span></a>
+    <a href="#disciplinas" data-nav="disciplinas" title="Disciplinas"><span class="side-icon" aria-hidden="true">▤</span><span class="nav-label">Disciplinas</span></a>
+    <a href="#agenda" data-nav="agenda" title="Agenda e atividades"><span class="side-icon" aria-hidden="true">▣</span><span class="nav-label">Agenda e atividades</span></a>
+    <span class="side-section">ACOMPANHAMENTO</span>
+    <a href="#avisos" data-nav="avisos" title="Avisos"><span class="side-icon" aria-hidden="true">◉</span><span class="nav-label">Avisos</span></a>
+    <a href="#materiais" data-nav="materiais" title="Materiais"><span class="side-icon" aria-hidden="true">▥</span><span class="nav-label">Materiais</span></a>
+  </nav>
+  <div class="side-bottom"><span class="status-dot" aria-hidden="true"></span><span class="nav-label">Portal em preparação<br><small>Conteúdos sujeitos à confirmação</small></span></div>
+</aside>
+<div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
+<div class="workspace">
+<header class="workspace-header"><div class="workspace-title"><button type="button" id="open-sidebar" class="icon-button" aria-label="Abrir menu lateral" aria-expanded="false" aria-controls="sidebar">☰</button><div><span class="header-eyebrow">PORTAL ACADÊMICO</span><strong id="header-section">Dashboard Acadêmico</strong></div></div><div class="header-right"><span class="semester-badge">2027.1</span><span class="avatar" aria-hidden="true">AH</span></div></header>
+<main id="app" class="shell" tabindex="-1"><section><p class="muted">Carregando AulaHub...</p></section></main>
+<footer class="footer"><div class="shell"><span>© <span id="year"></span> AulaHub · Portal Acadêmico</span><span>2027.1 em preparação · Materiais restritos fora deste site público</span></div></footer>
+</div>
+</div>
 <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
 </body></html>
