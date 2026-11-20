@@ -131,3 +131,18 @@ O mockup é referência **estética**, não fonte de datas ou arquivos publicado
 | RF-042 | Comunicar status de validade | Indicar explicitamente necessidade de validar 2027.1, especialmente os cursos ENGS e SI. |
 
 **Pendências:** obter planos aprovados de 2027.1 específicos para cada curso, definir datas, preparar materiais e liberar links com acesso controlado no Drive/Classroom. Não há cronogramas, aulas ou atividades de 2027.1 confirmados neste incremento.
+
+
+## Incremento 0.8 - Roteiro de aprendizagem da Unidade I de SO
+
+Base curricular: Plano de Ensino Aprendizagem de Sistemas Operacionais PPC 2026, versão corrigida (ADS, 66 h), objetos 341 a 345. Aplicação em 2027.1 e às turmas de ENGS e SI requer validação.
+
+| ID | Requisito | Critério de aceite |
+| --- | --- | --- |
+| RF-043 | Organizar cinco tópicos em encontros propostos | Encontros 1-5 vinculados respectivamente aos OCs 341-345. |
+| RF-044 | Exibir recursos públicos contextualizados | Dois vídeos e dois PDFs públicos, com indicação de fonte e link externo HTTPS. |
+| RF-045 | Apresentar proposta de atividade prática | Roteiro investigativo de 60 minutos sugeridos, sem atribuição de nota/prazo. |
+| RF-046 | Disponibilizar exercícios de fixação | Dez questões sem gabarito no portal público. |
+| RF-047 | Separar planejamento e publicação oficial | Indicar que slides autorais, atividades avaliativas e Classroom ainda aguardam liberação. |
+
+O conteúdo pedagógico proposto foi elaborado a partir dos tópicos do plano e não se confunde com transcrição literal do documento. Os links externos não garantem acesso gratuito permanente e devem ser revisados. Testes visuais de navegação e publicação não executados.
