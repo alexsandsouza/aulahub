@@ -88,3 +88,16 @@ Fonte: declaração docente emitida em 20/11/2026, seção 2027/1. Os sete regis
 | RF-027 | Distinguir previsto de confirmado | Cards e páginas individuais identificam alocações previstas sem simular dados oficiais definitivos. |
 
 Não há aulas, planos, horários nem atividades fictícias publicadas. Testes de interface e deploy público ainda precisam de validação no navegador.
+
+
+## Incremento 0.5 - Navegação por menu lateral
+
+| ID | Funcionalidade | Critério de aceite |
+| --- | --- | --- |
+| RF-028 | Menu lateral para o portal | Exibir Dashboard, Disciplinas, Agenda, Avisos e Materiais em menu persistente no desktop. |
+| RF-029 | Recolhimento do menu no desktop | Botão alterna entre largura completa e modo compacto com ícones e títulos acessíveis. |
+| RF-030 | Navegação móvel | Botão abre e fecha menu sobreposto, com fechamento por backdrop, Escape ou clique em link. |
+| RF-031 | Destacar seção ativa | Link ativo recebe `aria-current="page"` e destaque visual, incluindo as páginas individuais de disciplina. |
+| RNF-UX-002 | Responsividade do painel | Painel adapta a navegação sem barras laterais horizontais em telas estreitas. |
+
+**Nota:** este incremento não inclui autenticação ou backend; acessos a documentos permanecem governados pelo Drive/Classroom. Testes manuais em dispositivos e verificação da implantação pública permanecem pendentes.
