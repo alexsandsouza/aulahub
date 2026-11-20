@@ -170,3 +170,20 @@ html[data-theme="light"] .icon-button{color:var(--text)}
 .reference-link{display:inline-flex;font-size:.84rem;font-weight:700;color:var(--blue);text-decoration:none;margin-top:6px}
 .reference-link:hover{text-decoration:underline}
 html[data-theme="light"] .unit{background:#f4f8ff;border:1px solid #d4e2f4}
+
+/* Unidade I - roteiro de aprendizagem */
+.unit1-learning{margin-top:34px;display:grid;gap:17px}
+.unit1-learning>h3{font-size:1.13rem;letter-spacing:-.02em;margin:13px 0 0}
+.learn-banner{border:1px solid var(--line);background:linear-gradient(115deg,color-mix(in srgb,var(--blue) 13%,var(--panel)),var(--panel));border-radius:17px;padding:22px}
+.learn-banner h3{font-size:1.2rem;margin:10px 0}
+.learn-banner p{color:var(--text);margin:0 0 10px}
+.learn-banner small{color:var(--muted)}
+.lesson-grid,.learning-resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.lesson-card,.resource-card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px;min-width:0}
+.lesson-card h4,.resource-card h4{margin:10px 0 6px;line-height:1.4;font-size:.95rem}
+.lesson-card p,.resource-card p{font-size:.87rem;color:var(--muted);margin:0 0 11px}
+.lesson-card small{font-size:.79rem;color:var(--muted)}
+.exercise-list{padding-left:22px;margin:12px 0;display:grid;gap:11px}
+.exercise-list li{line-height:1.5;color:var(--text);font-size:.9rem}
+.unit1-learning .panel{background:var(--panel)}
+@media(max-width:620px){.lesson-grid,.learning-resources{grid-template-columns:1fr}.learn-banner{padding:18px}}
