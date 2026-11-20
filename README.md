@@ -91,3 +91,10 @@ O arquivo `data/portal.json` contém **7 alocações previstas** distribuídas e
 O dashboard apresenta indicadores automáticos, barras de distribuição por curso e filtros. Cada turma tem página própria; conteúdos, planos, bibliografias, cronogramas e vínculos de Classroom são publicados somente quando confirmados.
 
 Para atualizar uma turma, edite o item de mesmo `id` em `data/portal.json`. Não hospede materiais restritos ou dados pessoais nesse JSON público.
+
+
+## Interface 0.5 - Dashboard com menu lateral
+
+O AulaHub possui agora navegação lateral com os itens Dashboard, Disciplinas, Agenda e atividades, Avisos e Materiais. No desktop, a barra é fixa e recolhível; em telas pequenas, abre em painel sobreposto e fecha ao selecionar uma seção, ao pressionar Escape ou ao tocar fora dela. A seção ativa é destacada.
+
+A organização dos dados previstos de 2027.1 foi preservada, assim como as páginas individuais de disciplinas e a separação de materiais restritos do GitHub Pages.
