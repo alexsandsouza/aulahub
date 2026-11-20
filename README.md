@@ -45,7 +45,7 @@ O projeto segue o framework [SPECTION](https://github.com/alexsandsouza/spection
 
 ## 🔒 Autoria e utilização
 
-© 2026 Alexsander Farias de Souza. Todos os direitos reservados, salvo autorizações expressas e direitos de terceiros. Este repositório não concede licença geral de reutilização. Os direitos e as condições de uso dos materiais acadêmicos estão sujeitos também às regras institucionais aplicáveis.
+© 2026 Alexsand Farias de Souza. Todos os direitos reservados, salvo autorizações expressas e direitos de terceiros. Este repositório não concede licença geral de reutilização. Os direitos e as condições de uso dos materiais acadêmicos estão sujeitos também às regras institucionais aplicáveis.
 
 ---
 
