@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="AulaHub - portal acadêmico para organização de disciplinas, cronogramas, atividades e avisos.">
+  <title>AulaHub | Seu espaço acadêmico</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080f1d;--panel:#111c30;--panel2:#17243a;--line:#293950;--text:#f1f5ff;--muted:#a6b5cb;--accent:#58c5ff;--accent2:#a0a1ff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#153055 0,transparent 35%),var(--bg);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text)}
+    a{color:inherit}button,input{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .wrap{max-width:1120px;margin:auto;padding:0 24px}.top{position:sticky;top:0;z-index:3;background:#080f1de8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}.logo{font-size:1.32rem;font-weight:800;text-decoration:none;letter-spacing:-.04em}.logo span{color:var(--accent)}
+    .menu{display:flex;gap:24px;flex-wrap:wrap}.menu a{color:var(--muted);text-decoration:none;font-size:.93rem}.menu a:hover{color:white}
+    .hero{padding:86px 0 64px;display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:42px}.eyebrow{color:var(--accent);letter-spacing:.14em;text-transform:uppercase;font-weight:700;font-size:.75rem}
+    h1{font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:1.07;letter-spacing:-.055em;margin:14px 0 20px}h1 em{font-style:normal;color:var(--accent)}.lead{color:var(--muted);max-width:650px;font-size:1.12rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:12px;padding:13px 18px;font-weight:700;text-decoration:none;border:1px solid var(--line);background:var(--panel2)}
+    .btn.primary{background:linear-gradient(110deg,var(--accent),var(--accent2));border:0;color:#061025}.showcase{background:linear-gradient(150deg,#203960,#101c33);border:1px solid #34527b;border-radius:24px;padding:26px;box-shadow:0 22px 50px #0005}
+    .showcase .mini{color:var(--muted);font-size:.83rem}.showcase strong{display:block;font-size:1.45rem;margin:12px 0 20px}.chip{display:inline-flex;border:1px solid #497096;background:#173454;padding:6px 11px;border-radius:999px;color:#cbeaff;font-size:.78rem;margin:4px 5px 4px 0}
+    section{padding:36px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:20px}h2{font-size:1.8rem;margin:0;letter-spacing:-.035em}.sub{color:var(--muted);margin:5px 0 0}
+    .search{width:min(100%,370px);background:var(--panel);border:1px solid var(--line);border-radius:12px;color:white;padding:13px 15px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:linear-gradient(155deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:24px;min-height:218px}
+    .card .mark{display:inline-flex;align-items:center;justify-content:center;background:#204264;border:1px solid #34577a;width:44px;height:44px;border-radius:12px;font-size:1.3rem}
+    .card h3{font-size:1.12rem;margin:18px 0 7px}.card p{color:var(--muted);font-size:.91rem;margin:0}.small{font-size:.8rem;color:var(--accent);margin-top:20px}
+    .info{background:#101e32;border:1px solid var(--line);border-radius:18px;padding:26px}.info h3{margin:0 0 8px}.info p{color:var(--muted);margin:0}.notice{border-left:3px solid var(--accent);padding-left:18px}
+    .empty{display:none;color:var(--muted);padding:24px 0}.footer{margin-top:54px;border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.85rem}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:58px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.menu{gap:12px}}
+    @media(max-width:570px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;padding-top:16px;padding-bottom:16px;flex-direction:column}.hero{padding-top:40px}.showcase{padding:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="#inicio" class="logo" aria-label="AulaHub, início">Aula<span>Hub</span></a>
+<nav class="menu" aria-label="Navegação principal"><a href="#disciplinas">Disciplinas</a><a href="#avisos">Avisos</a><a href="#acesso">Acesso aos materiais</a></nav></div></header>
+<main id="inicio" class="wrap">
+  <div class="hero"><div><div class="eyebrow">Portal acadêmico</div><h1>Suas aulas.<br><em>Tudo em um só lugar.</em></h1>
+  <p class="lead">Um espaço para encontrar orientações das disciplinas, acompanhar atividades e consultar avisos acadêmicos com clareza e organização.</p>
+  <div class="actions"><a class="btn primary" href="#disciplinas">Explorar disciplinas</a><a class="btn" href="#acesso">Como acessar materiais</a></div></div>
+  <aside class="showcase" aria-label="Resumo do portal"><div class="mini">Bem-vindo ao AulaHub</div><strong>Organização para aprender melhor.</strong><span class="chip">Disciplinas</span><span class="chip">Atividades</span><span class="chip">Cronogramas</span><span class="chip">Avisos</span><p class="mini">Em preparação para o próximo período letivo.</p></aside></div>
+  <section id="disciplinas" aria-labelledby="disciplinas-title"><div class="section-head"><div><h2 id="disciplinas-title">Disciplinas</h2><p class="sub">Estrutura inicial. As turmas e conteúdos serão publicados após confirmação.</p></div><input id="busca" class="search" type="search" aria-label="Buscar disciplinas" placeholder="Buscar disciplina..." autocomplete="off"></div>
+  <div id="cards" class="grid">
+    <article class="card" data-name="Sistemas Operacionais"><span class="mark" aria-hidden="true">⚙</span><h3>Sistemas Operacionais</h3><p>Área reservada para ementa, plano de aulas e atividades.</p><div class="small">Conteúdo em preparação</div></article>
+    <article class="card" data-name="Engenharia de Software"><span class="mark" aria-hidden="true">⌘</span><h3>Engenharia de Software</h3><p>Área reservada para projetos, orientações e cronograma.</p><div class="small">Conteúdo em preparação</div></article>
+    <article class="card" data-name="Lógica e Programação"><span class="mark" aria-hidden="true">⌨</span><h3>Lógica e Programação</h3><p>Área reservada para exercícios e recursos de aprendizagem.</p><div class="small">Conteúdo em preparação</div></article>
+  </div><p id="vazio" class="empty" role="status">Nenhuma disciplina corresponde à busca.</p></section>
+  <section id="avisos"><div class="section-head"><div><h2>Avisos acadêmicos</h2><p class="sub">Comunicados importantes em destaque.</p></div></div>
+  <div class="info notice"><h3>Portal em construção</h3><p>Os avisos, prazos e cronogramas oficiais serão adicionados quando o novo período letivo estiver definido.</p></div></section>
+  <section id="acesso"><div class="section-head"><div><h2>Acesso aos materiais</h2><p class="sub">Organização com respeito à autoria e ao acesso de cada turma.</p></div></div>
+  <div class="info"><h3>Materiais disponibilizados em ambientes autorizados</h3><p>Slides, apostilas, avaliações e arquivos restritos não são hospedados neste site público. Quando disponíveis, devem ser acessados pelos canais oficiais indicados pelo professor, como Google Classroom ou pastas do Google Drive com permissão apropriada.</p></div></section>
+</main>
+<footer class="footer"><div class="wrap">© <span id="ano"></span> AulaHub · Portal acadêmico · Desenvolvido para apoio à aprendizagem.</div></footer>
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+const busca=document.getElementById('busca');const cards=[...document.querySelectorAll('#cards .card')];
+busca.addEventListener('input',()=>{const q=busca.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();let n=0;cards.forEach(c=>{const v=c.dataset.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(q);c.hidden=!v;c.style.display=v?'':'none';if(v)n++});document.getElementById('vazio').style.display=n?'none':'block'});
+</script></body></html>
