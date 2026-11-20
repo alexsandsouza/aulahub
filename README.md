@@ -110,3 +110,12 @@ A organização dos dados previstos de 2027.1 foi preservada, assim como as pág
 
 ### Verificação recomendada
 Abrir em desktop e celular, alternar tema, recarregar a página, testar navegação por teclado, recolher menu lateral, acessar páginas de disciplinas, verificar cards e links. O teste em navegadores reais ainda não foi registrado como concluído.
+
+
+## Organização didática de Sistemas Operacionais - 2027.1
+
+Três turmas previstas organizadas: ADS262M01-SED, ENGS262M01-SED e SIS262N01-SED.
+
+O catálogo em `data/portal.json` passou a conter 6 unidades, 31 objetos de conhecimento (341-371) e bibliografia básica/complementar identificada no plano de ensino corrigido de Sistemas Operacionais, PPC 2026. A interface detalha os objetos na aba Unidades e apresenta links para o acervo na aba Referências, quando fornecidos pelo plano.
+
+**Validação pedagógica:** o plano de origem identifica ADS e foi elaborado para 2026.2. A adaptação aos cursos Engenharia de Software e Sistemas de Informação, bem como a vigência no período 2027.1, depende de validação institucional. Não inventamos datas, conteúdos avaliativos nem materiais.
