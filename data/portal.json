@@ -199,7 +199,15 @@
           ]
         }
       ],
-      "aulas": [],
+      "aulas": [
+        {
+          "titulo": "Unidade I - Orientações iniciais",
+          "descricao": "Material de apresentação da unidade informado como publicado no Google Classroom. Acesso pelo ambiente da turma, link ainda não vinculado.",
+          "tipo": "Orientação",
+          "unidade": 1,
+          "situacao": "Publicação informada pelo professor"
+        }
+      ],
       "atividades": [],
       "cronograma": [],
       "referencias": [
@@ -394,6 +402,21 @@
         "materiaisAutorais": [],
         "linksClassroom": [],
         "nota": "Objetivos, metodologia, prática e questões são propostas pedagógicas elaboradas a partir dos OCs 341-345 do plano PPC 2026; não são transcrição literal nem atividades aprovadas para 2027.1."
+      },
+      "classroom": {
+        "situacao": "Turma criada",
+        "nome": "Sistemas Operacionais - 2027.1",
+        "secao": "ADS262M01-SED",
+        "instituicao": "Centro Universitário CEUNI - FAMETRO",
+        "materialInicial": {
+          "titulo": "Unidade I - Introdução aos Sistemas Operacionais e Conceitos de Hardware",
+          "tipo": "Material de orientação",
+          "situacao": "Publicação informada pelo professor",
+          "topico": "Unidade I - Introdução aos Sistemas Operacionais",
+          "descricao": "Orientações, objetivo e objetos de conhecimento OC 341 a 345 disponíveis no Google Classroom."
+        },
+        "urlConfirmada": false,
+        "observacao": "O link completo da sala não foi fornecido. Não exibir código de convite."
       }
     },
     {
