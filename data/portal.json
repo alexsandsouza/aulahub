@@ -35,7 +35,7 @@
       "periodo": "2027.1",
       "cargaHoraria": 66,
       "status": "prevista",
-      "classroomUrl": null,
+      "classroomUrl": "https://classroom.google.com/w/OTAwNzIzNTU3MTM4/t/all",
       "planoUrl": null,
       "unidades": [
         {
@@ -415,8 +415,8 @@
           "topico": "Unidade I - Introdução aos Sistemas Operacionais",
           "descricao": "Orientações, objetivo e objetos de conhecimento OC 341 a 345 disponíveis no Google Classroom."
         },
-        "urlConfirmada": false,
-        "observacao": "O link completo da sala não foi fornecido. Não exibir código de convite."
+        "urlConfirmada": true,
+        "observacao": "URL da aba Atividades do Google Classroom informada pelo professor em 20/11/2026. Acesso exige permissões da turma."
       }
     },
     {
